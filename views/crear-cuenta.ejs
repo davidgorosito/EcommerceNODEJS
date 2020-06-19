@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/stylesheets/crear-cuenta.css">
+    <%- include('./partials/head.ejs') %> 
+</head>
+<body class="body">
+    <%- include('./partials/header.ejs') %> 
+    <form action="" method="POST">
+        <div class="container2">
+        <h1>Registrate</h1>
+        <label for="Nombre" class="titulos"> Tu Nombre</label>
+        <br>
+        <br>
+        <input type="text" placeholder="Nombre(s)" name="Nombre">
+        <br>
+        <br>
+        <br>
+        <input type="text" placeholder="Apellido(s)" name="Apellido">
+        <br>
+        <br>
+        <label for="FechaDeNacimiento" class="titulos"> Fecha De Nacimiento</label>
+        <br>
+        <br>
+        <input type="number"  placeholder="DD" min="1" max="31">
+        <input type="number"  placeholder="MM" min="1" max="12">
+        <input type="number"  placeholder="YYYY" min="1" max="2000">
+        <br>
+        <p>Recopilamos la fecha de nacimiento de acuerdo a nuestro aviso de privacidad. <br> ¡Te haremos un regalo por tu cumpleaños!</p>
+        <label for="Sexo" class="titulos">Sexo</label>
+        <br><br>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="Mujer" name="genero" value="Mujer">
+        <label for="Mujer">Mujer</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>
+        <br>
+        <br>
+        <label for="datos" class="titulos">Datos De Acceso</label>
+        <br>
+        <br>
+        <input type="text" placeholder="Correo Electronico">
+        <br>
+        <br>
+        <input type="text" placeholder="Contraseña">
+        <br>
+        <br>
+        <input type="checkbox">
+        <label for="notificaciones">Me gustaria recibir noticias sobre productos y servicios</label>
+        <br>
+        <br>
+        <input type="checkbox">
+        <label for="terminos">He leido y acepto los Terminos y Condiciones y el Aviso de Privacidad</label>
+        <br>
+        <br>
+        <input class="registrarse" type="submit" value="Registrate">
+    </div>
+</form>
+<%- include('./partials/footer.ejs') %> 
+</body>
+
+</html>

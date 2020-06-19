@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.crear{
+    background-color: lightslategrey;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.body{
+    background-image: url(../images/img/adidas.jpg);
+}
+.href{
+    background-color: lightslategrey;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+@media(min-width: 481px){
+.container{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url(../images/img/adidas.jpg);
+    image-rendering: auto;
+}
+}
+@media(min-width: 769px){
+.body{
+    background-image: url(../images/img/adidas.jpg);
+    image-rendering: auto;
+}
+.container{
+    border: none;
+
+}
+
+}
+    
+

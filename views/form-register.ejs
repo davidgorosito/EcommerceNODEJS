@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/stylesheets/form-register.css">
+    <%- include('./partials/head.ejs') %> 
+</head>
+<body class="body">
+    <%- include('./partials/header.ejs') %> 
+    <form action="" method="POST">
+        <div class="container">
+            <h1 >Iniciar Sesion</h1>
+            <label for="mail" style="font-size: 30px;"> *Correo electronico</label>
+            <br>
+            <input type="text" placeholder="@hotmail.com" name="mail" size="30px"> 
+            <br>
+            <br>
+            <label for="contraseña" style="font-size: 30px;"> *Contraseña</label>
+            <br>
+            <input type="text" placeholder="Contraseña" name="Contraseña" size="30px" maxlength="50" autocomplete="off">
+            <br>
+            <p ><a  href="https://www.google.com.ar/" style="color: black;">¿Has olvidado tu contraseña?</a></p>
+            <input type="submit" value="Iniciar Sesion" href=""> 
+            <br>  
+            <br> 
+            <br>
+            <a  class="href" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
+            <br>
+            <a class="href" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>
+            <br>
+        </form>
+        <br>
+        <a class="crear" href="crear-cuenta.html" style="color: black;">Crear Cuenta</a>
+    </div>
+    <%- include('./partials/footer.ejs') %> 
+
+</body>
+</html>
