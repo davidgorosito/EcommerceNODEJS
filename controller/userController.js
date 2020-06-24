@@ -16,5 +16,5 @@ let userController={
          res.render("productAdd",{mensaje:mensaje}) 
         },
     product:(req,res)=>res.render('listaDeProductos',{arrayProducts}),
-}
+}// probando git
 module.exports=userController;
