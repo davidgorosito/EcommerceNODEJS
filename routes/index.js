@@ -13,9 +13,9 @@ router.get('/listarProductos',productController.listar)
 router.get('/producto/detail/:id', productController.detail)
 // editar producto
 router.get('/producto/editar/:id', productController.edit)
-router.post('/producto/editar/:id', productController.saveP)
+router.put('/producto/editar/:id', productController.saveP)
 // eliminar producto
-router.get('/producto/delete/:id', productController.delete)
+router.delete('/producto/delete/:id', productController.delete)
 //router.post('/producto/editar/:id', productController.confirmDelete)
 
 module.exports = router;
