@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agregar producto </title>
+    <link rel="stylesheet" href="/stylesheets/productAdd.css"><!--mi css que no linkea-->
+   <!--bootstrap css-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <!--aca estan correctamente los links de los js necesarios para que anden tanto el buscador como el carrusel-->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <%- include('./partials/head.ejs') %> 
+</head>
+<body>  
+  <%- include('partials/header.ejs') %>      
+  <div class="container-form">  
+      <form action="/producto/editar/<%=productDetail.Id %> " method="POST">
+
+        <div class="form-group">
+          <label for="formGroupExampleInput">Nombre del producto</label>
+          <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder= <%= productDetail.name %> required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">precio del producto</label>
+          <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=<%= productDetail.price %>  required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">descripcion</label>
+          <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder=<%= productDetail.description %>  required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">descuento</label>
+          <input type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Elija una categoria</label>
+          <select class="form-control"  name ="category" id="exampleFormControlSelect1" >
+            <option>Mujeres</option>
+            <option>Hombres</option>
+            <option>Niños</option>
+          </select>
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Elija el deporte</label>
+          <select class="form-control"  name ="sports" id="exampleFormControlSelect1" >
+            <option>Futbol</option>
+            <option>Hockey</option>
+            <option>Yoga</option>
+            <option>Running</option>
+            <option>Training</option>
+            <option>Otros</option>
+          </select>
+          </div>
+          <section class="container-image">
+             <div class="fileinput fileinput-new" data-provides="fileinput">
+             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px" ></div>
+             <div>
+             <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del producto</span><br>
+             <span class="fileinput-exists"></span><input type="file" name="image"></span>
+            <a href="#" class="btn btn-primary" data-dismiss="fileinput">eliminar</a>
+            </div>
+           </div>
+          <section>
+     <!--quiero centrar esto -->
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+      </form>
+      </div>
+     > 
+</body>
+</html>
