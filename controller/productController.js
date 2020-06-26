@@ -67,11 +67,12 @@ let productController={
     },
     delete:(req, res)=>{
         // busco el producto a eliminar
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
-        let productDetail = products.find(function (product){
-           return  product.Id == req.params.id}
-        )
-        res.render('delete',{productDetail, mensaje:mensaje})
+        let productId = req.params.id
+        let productToDelete = products.filter(product => product.id != productId)
+    
+        let productToDeleteJSON = JSON.stringify(productToDelete)
+        fs.writeFileSync(productsJson, productToDeleteJSON)
+    
     },
 }
 
