@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+}
+
+html body{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+a:hover{
+  color: black;
+}
+
+.cont-reciclaje{
+  width: 100%;
+  margin: 30px 0px;
+}
+.principal-reciclaje{
+  /*width: 480px;*/
+}
+.imag-reciclado{
+  width: 480px;
+  height: auto;
+}
+.banner-principal-recic{
+  position: absolute;
+  top: 288px;
+  width: 100%;
+}
+.banner-texto{
+  background: transparent;
+  color: #fff;
+  font-size: 43px;
+  letter-spacing: -0.08rem;
+  line-height: 1;
+  text-align: center
+}
+.cont-info{
+  padding:40px 50px 40px 50px;
+}
+.cont-carbono{
+  margin-bottom: 40px;
+  padding: 0px 20px
+}
+.titulo-carbono{
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.04rem;
+  line-height: 48px;
+  padding-bottom: 17px;
+  position: relative;
+  color: transparent;
+  background-image: url('../images/fondoreciclado.jpg');
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+.parrafo-carbono{
+  font-family: 'Avenir Next LT Pro Medium', Helvetica,sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  text-align: justify;
+}
+.titulo-materiales{
+  background-image: url('../images/tierra.jpg');
+}
+.titulo-consomo{
+  background-image: url('../images/aire.jpg');
+}
+.titulo-cambios{
+  background-image: url('../images/fuego.jpg');
+}
+.final-reciclaje{
+  width: 480px;
+  position: relative;
+  margin-bottom: 46px;
+}
+.imag-final{
+  width: 380px;
+  height: auto;
+  margin: 0px 50px;
+}
+.banner-final-recic{
+  position: absolute;
+  top: 118px;
+  width: 100%;
+}
+.banner-texto-final{
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 19px;
+  letter-spacing: 1,5px;
+  line-height: 1;
+  text-align: center;
+  margin: 0px 95px;
+}
+@media screen and  (min-width:481px){
+  .imag-reciclado{
+    width: 770px;
+  }
+  .banner-texto{
+    font-size: 79px;
+  }
+  .banner-principal-recic {
+    top: 356px;
+  }
+  .final-reciclaje {
+    width: 770px;
+  }
+  .imag-final {
+    width: 670px;
+  }
+  .banner-final-recic{
+    top: 211px;
+  }
+  .banner-texto-final{
+    font-size: 28px;
+  }
+}
+@media screen and  (min-width:770px){
+  .cont-info {
+    padding: 40px 255px;
+  }
+  .banner-principal-recic {
+    top: 381px;
+  }
+  .imag-reciclado{
+    width: 1440px;
+    height: 810px;
+  }
+  .banner-texto{
+    font-size: 100px;
+  }
+  .titulo-carbono{
+    font-size: 70px;
+    line-height: 86px;
+  }
+  .parrafo-carbono{
+    margin-bottom: 70px;
+  }
+  .final-reciclaje {
+    width: 1440px;
+}
+  .imag-final {
+    width: 890px;
+    height: 600px;
+    margin: 0px 275px 42px 275px;
+  }
+  .banner-final-recic {
+    top: 186px;
+}
+  .banner-texto-final {
+    font-size: 36px;
+    margin: 89px 430px 0px 380px;
+  }
+}
