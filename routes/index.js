@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var productController = require('../controller/productController')
+let indexController= require('../controller/indexController')
 
 /* GET home page. */
-router.get('/', productController.home)
+router.get('/', indexController.home);
 // form de crear producto
 router.get('/agregarProducto',productController.productAdd)
 router.post('/agregarProducto',productController.store)
@@ -17,4 +18,8 @@ router.put('/producto/editar/:id', productController.saveP)
 // eliminar producto
 router.delete('/producto/delete/:id', productController.delete)
 
+
+router.get('/porquereciclado', indexController.recicla)
+router.get('/help/covid19', indexController.covid19)
+router.get('/mujer', indexController.mujer)
 module.exports = router;

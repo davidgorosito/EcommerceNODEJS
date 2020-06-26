@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include('partials/head.ejs') %> 
-</head>
+  <%- include('./partials/head.ejs') %> 
+
 <body>
-    <%- include('partials/header.ejs') %>
+  <%- include('./partials/header.ejs') %> 
     <h1> TODOS LOS PRODUCTOS </h1>
 
 <div class="container">
@@ -28,5 +25,6 @@
 
       <% }); %> 
     </div>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

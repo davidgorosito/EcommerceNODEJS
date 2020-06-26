@@ -38,8 +38,10 @@ let productController={
         fs.writeFileSync(productsJson,JSON.stringify(nuevoarrayDeProducts,null," "))
     },
     listar: (req , res)=>{
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
-        res.render('listado-productos',{products,mensaje:mensaje})
+        res.render('listado-productos',{products,
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
     },
     edit : (req , res)=>{
         //busco el producto a editar 
