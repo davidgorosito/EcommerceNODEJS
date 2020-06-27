@@ -11,7 +11,7 @@
 
   }
   .body{
-      background-image: url(../images/img/adidas.jpg);
+      background-image: url(../images/adidas.jpg);
   }
   .registrarse{
     border: solid 1px;
@@ -23,7 +23,7 @@
   @media(min-width: 768px){
 .container2{ border: none;  
 }
-.body{ background-image: url(../images/img/adidas.jpg);
+.body{ background-image: url(../images/adidas.jpg);
 }
   }
 @media(min-width: 1024px){
@@ -31,7 +31,7 @@
         border: none;
     }
 .body{
-    background-image: url(../images/img/adidas.jpg);
+    background-image: url(../images/adidas.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
