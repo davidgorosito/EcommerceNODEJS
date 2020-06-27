@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/form-register.css">
+    <%- include('partials/head.ejs') %> 
 </head>
 <body class="body">
-    <form action="/register" method="POST">
+    <%- include('partials/header.ejs') %> 
+    <img src="../nuevo tp/logo4.png" alt="">
+    <form class="box" action="" method="POST">
+        
         <div class="container">
-            <h1 class="titulos">Iniciar Sesion</h1>
-            <h2 class="titulos">Correo Electronico</h2>
-            <input type="text" placeholder="Ejemplo@hotmail.com" name="mail" size="30px"> 
+            <h1 >Iniciar Sesion</h1>
+            <label for="mail" style="font-size: 30px;" class="titulos">Correo electronico</label>
 
-            <h2 class="titulos">Contraseña</h2>
+            <input type="text" placeholder="tuemail@hotmail.com" name="mail" size="30px"> 
+
+            <label for="contraseña" style="font-size: 30px;" class="titulos">Contraseña</label>
+
             <input type="text" placeholder="Contraseña" name="Contraseña" size="30px" maxlength="50" autocomplete="off">
 
-            <p ><a  href="https://www.google.com.ar/" style="color: black;">¿Has olvidado tu contraseña?</a></p>
-
             <input type="submit" value="Iniciar Sesion" href=""> 
-            <p><a  class="href" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
+            <p><a href="https://www.google.com.ar/" style="color: black;">¿Has olvidado tu contraseña?</a></p>
+
+
+            <a  class="href" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
+
             <a class="href" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>
-            </p>
 
         </form>
-        
-        <a class="crear" href="crear-cuenta.ejs" style="color: black;">Crear Cuenta</a>
+        <br>
+        <a class="crear" href="crear-cuenta.html" style="color: black;">Crear Cuenta</a>
     </div>
-    
+    <%- include('partials/footer.ejs') %> 
 
 </body>
 </html>

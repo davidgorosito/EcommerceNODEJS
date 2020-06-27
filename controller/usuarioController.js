@@ -10,7 +10,8 @@ let arrayUsuarios = JSON.parse(fs.readFileSync(usuarioJson,'utf-8'));
 
 
 let usuarioController={
-    register:(req,res)=> res.render('crear-cuenta'),
+    register:(req,res)=> res.render('crear-cuenta',{titulo: "Proyecto",
+    mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'}),
     crear:(req, res,next) =>{
         let nuevoUsuario = {
             nombre:req.body.nombre,
@@ -25,11 +26,11 @@ let usuarioController={
         res.redirect('/index');
      },
         login: (req, res)=>{
-        res.render('login',{ title: "Proyecto",
+        res.render('login',{ titulo: "Proyecto",
         mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         
     })
-     res.redirect('crear-cuenta')
+    //  res.redirect('crear-cuenta')
     }
  }
 

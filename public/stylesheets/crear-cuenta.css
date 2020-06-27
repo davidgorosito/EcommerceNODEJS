@@ -1,42 +1,159 @@
 *{
     box-sizing: border-box;
 }
-.container2 {
+body{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .titulos{
-      font-style: oblique;
-      text-decoration-line: underline;
-      font-size: 26px;
-
-  }
-  .body{
-      background-image: url(../images/adidas.jpg);
-  }
-  .registrarse{
-    border: solid 1px;
-    color: black;
+    /* background: #282828; */
+    background: white;
+    /* background-image: url(../adidas.jpg); */
+    image-rendering: auto;
+    color: white;
+}
+/* .wrap{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+} */
+img {
+    text-align: center;
+    position: absolute;
+    width: 180px;
+    padding: 40px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.box{
+    width: 510px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-18%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 17px 10px;
+    width: 200px;
+    color: white;
+    border-radius: 30px;
+    transition: 0.25s;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:focus{
+    background-color: #2ecc71;
+}
+.href{
+    background: none;
+    border: none;
+    color: white;
     padding: 10px 30px;
-    background-color: darkgray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
-  }
-  @media(min-width: 768px){
-.container2{ border: none;  
 }
-.body{ background-image: url(../images/adidas.jpg);
+
+/* Checkbox terminosycondiciones y Radios generos */
+
+wrap
+
+.radiogenero h2{
+    font-size: 16px;
+    color: #001f3f;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
-  }
+.radiogenero{
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.radiogenero input[type='radio'],
+.aceptarterminos input[type='checkbox'] {
+    display: none;
+
+}
+.radiogenero label,
+.aceptarterminos label {
+    color: #3498db;
+    /* background: rgba(0, 0, 0, .1);   //fondo gris// */
+    padding: 5px 15px 5px 51px;
+    display: inline;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.radiogenero label:hover,
+.aceptarterminos label:hover {
+    background: rgba(0, 116, 217, 0.1);
+}
+.radiogenero label::before,
+.aceptarterminos label::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+.aceptarterminos label::before{
+    border-radius: 3px;
+}
+.radiogenero input[type='radio']:checked + label,
+.aceptarterminos input[type='checkbox']:checked + label {
+    padding: 5px 15px;
+    background: #3498db;
+    border-radius: 2px;
+    color: white;
+}
+.radiogenero input[type='radio']:checked + label::before,
+.aceptarterminos input[type='checkbox']:checked + label::before {
+    display: none;
+}
+
+@media(min-width: 768px){
+    .container2{ border: none;  
+    }
+    .body{ background-image: url(../images/img/adidas.jpg);
+    }
+}
 @media(min-width: 1024px){
     .container2{
         border: none;
     }
-.body{
-    background-image: url(../images/adidas.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
 }
