@@ -8,19 +8,25 @@ const products= JSON.parse(fs.readFileSync(productsJson,'utf-8'));
 
 let productController={
     home: (req, res)=> {
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
-        res.render('index',{mensaje:mensaje})
+        res.render('index',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
     },
     productAdd: (req , res)=>{
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
-         res.render("productAdd",{mensaje:mensaje}) 
+         res.render("productAdd",{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        }) 
         },
     detail: (req, res) => {
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
         let productDetail = products.find(function (product){
            return  product.Id == req.params.id}
         )
-        res.render('detail',{productDetail, mensaje:mensaje})
+        res.render('detail',{productDetail, 
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
     },
     store:(req , res)=>{
         //capturo los datos del formulario mediante una variable 
@@ -45,11 +51,13 @@ let productController={
     },
     edit : (req , res)=>{
         //busco el producto a editar 
-        let mensaje ="3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500";
         let productDetail = products.find(function (product){
            return  product.Id == req.params.id}
         )
-        res.render('edit',{productDetail, mensaje:mensaje})
+        res.render('edit',{productDetail,
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
     },
         saveP: (req, res)=>{let id = req.params.id;
            // agarro la info que viene por el form
