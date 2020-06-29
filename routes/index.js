@@ -22,4 +22,5 @@ router.delete('/producto/delete/:id', productController.delete)
 router.get('/porquereciclado', indexController.recicla)
 router.get('/help/covid19', indexController.covid19)
 router.get('/mujer', indexController.mujer)
+
 module.exports = router;
