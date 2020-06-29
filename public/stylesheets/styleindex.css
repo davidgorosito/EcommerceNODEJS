@@ -827,4 +827,41 @@ border-bottom: 15px;
  .cont-sobre-nosotros{
    margin-top: 137px;
  }
+ /*footer*/
+ .email-singup {
+  font: 18px Helvetica,Arial,sans-serif;
+ }
+ .email-singup-texto{
+  margin-bottom: 33px;
+ }
+ .email-adress{
+  font: 700 12px Helvetica,Arial,sans-serif;
+ }
+ .formulario-email{
+   width: 97%;
+ }
+ .footer-form{
+   display: inline;
+ }
+ .footer-in{
+   width: 29%;
+ }
+ .formulario-footer{
+   float: left;
+ }
+ .footer-button{
+  display: contents;
+ }
+ .footer-b-registra{
+   width: 14%;
+   margin-top: 26px;
+   margin-left: 12px;
+ }
+ element.style {
+  margin-top: 26px;
+  margin-left: 19px;
+}
+.text-politica{
+  margin-top: 20px;
+}
 }
