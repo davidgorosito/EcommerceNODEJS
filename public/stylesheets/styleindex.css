@@ -864,4 +864,24 @@ border-bottom: 15px;
 .text-politica{
   margin-top: 20px;
 }
+.footer-link{
+  border-bottom: none;
+  float: right;
+  margin-top: -211px;
+  margin-right: 304px;
+  border-left: 1px solid #ddd;
+  height: 278px;
+}
+.footer-redes-sociailes{
+  margin-right: none;
+  margin-left: 53px;
+  padding-bottom: 30px;
+  padding-top: 17px;
+}
+.link-ubicacion{
+  margin-left: 194px;
+}
+.link-edit-desktop{
+  margin-top: 84px;
+}
 }
