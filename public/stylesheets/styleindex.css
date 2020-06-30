@@ -23,6 +23,7 @@ a:hover{
 .cont-header{
 width: 100%;
 border-bottom: 15px;
+position: fixed;
 }
 
 .notificacion{
@@ -73,35 +74,100 @@ border-bottom: 15px;
   grid-template-areas: ". nav logo utilidades .";
   /*align-items: ;*/
   border-bottom: 1px solid rgba(206, 202, 202, 0.988);
-  background-color:transparent ;
+  background-color:white;
   /*position: fixed;*/
 }
 
 .nav-menu{
   grid-area: nav;
-  width: 100%;
   padding: 16px 0px 15px 9px;
   font-size: 30px; 
-  display: block;
+  width: 100%;
+  position: fixed;
+  /*background-color: white;*/
+  z-index: 3;
 }
-
-.nav-menu-toggle{
-  position: relative;
-  width: 50px;
-  height: 50px;
-  transition-timing-function: linear;
-  transition-duration: .15s;
-  transition-property: opacity,filter,transform;
-  border: 0px;
-}
-
-.label-toggle{
-  margin:-9px 0px; 
-  font-size: 30px;
-  line-height: 70px;
-  display:block;
-  cursor: pointer;
+.nav-menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
   background-color: white;
+}
+.nav-menu .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*icono del menu hamburger*/
+.nav-menu .menu-icon{
+  padding: 28px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-menu .menu-icon .nav-icon{
+  background:black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+.nav-menu .menu-icon .nav-icon:before{
+  background: black;
+  content:"";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+.nav-menu .menu-icon .nav-icon:after{
+  background: black;
+  content:"";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+.nav-menu .menu-btn{
+  display: none;
+}
+.nav-menu .menu-btn:checked ~ .menu{
+  max-height: 100%;
+}
+.nav-menu .menu-btn:checked ~ .menu-icon .nav-icon{
+  background: transparent;
+}
+.nav-menu .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top: 0;
+}
+.nav-menu .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+/*fin del menu hamburger*/
+
+.header-menu-out{
+  width: 100%;
+  height: calc(100% - 78px);
+}
+.nav-categorias{
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 20px;
+  border: 0;
+  font-size: 100%;
+  font: 17px Helvetica,Arial,sans-serif;
+  letter-spacing: 0.05rem;
+  color: black;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo-header{
@@ -132,30 +198,6 @@ border-bottom: 15px;
   margin:25px 0px 25px 48px;
 }
 
-/*.header-menu{
-  position: fixed;
-  top: 78px;
-  left: 0;
-  background: #fff;
-  width: 100%;
-  margin: 0;
-  height: calc(100% - 78px);
-  transform: translate3d(-100%,0,0);
-  background: #fff;
-  transition: transform .25s ease-in-out;
-  z-index: 6500;
-}
-
-.header-nav-menu{
-  top:158px;
-  grid-area: nav;
-  align-self: end;
-  margin: 0px;
-  overflow-y: auto;
-  transform: translateZ(0);
-  width: 480px;
-  display: block;
-}*/
 .header-desktop-detalle{
   display: none;
 }
@@ -167,18 +209,6 @@ border-bottom: 15px;
   margin: 0px 0px 0px -40px;
   padding: 25px 20px;
   border-bottom: 1px solid #ddd;
-}
-.nav-categorias{
-  display: inline-block;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: 17px Helvetica,Arial,sans-serif;
-  letter-spacing: 0.05rem;
-  color: black;
-  vertical-align: baseline;
 }
 
 .nav-categorias span{
@@ -205,8 +235,7 @@ border-bottom: 15px;
   padding-top: 30px;
 }
 .contenedor-main{
-  position: relative;
-  padding-top: 30px;
+  padding-top: 188px;
 }
 .home-page{
   vertical-align: baseline;
@@ -526,14 +555,6 @@ border-bottom: 15px;
     width: 100%;
     vertical-align: middle;
   }
-  .nav-header{
-    position: relative;
-    z-index: 6100;
-    grid-template-columns: 60px 1fr 2fr 1fr 60px;
-  }
-  .nav-menu{
-    padding: 13px 0px 15px 0px;
-  }
   .utilidades-header-buscador{
     margin-left: 100px;
   }
@@ -664,7 +685,7 @@ border-bottom: 15px;
     background-color: black;
   }
   .nav-header{
-    grid-template-columns: 60px 1fr 2fr 1fr 60px;
+    grid-template-columns: 0px 1fr 2fr 1fr 0px;
     grid-template-areas: ". logo nav utilidades .";
   }
   .nav-menu{
@@ -674,22 +695,19 @@ border-bottom: 15px;
     justify-content: center;
     height: 78px;
   }
-  .header-menu{
-    position: static;
-    width: auto;
-    height: auto;
+  .nav-menu li{
+    float: left;
   }
-  .header-desktop-detalle{
-    display: inline;
+  .nav-menu .menu{
+    clear: none;
+    max-height: none;
   }
+  .nav-menu .menu-icon{
+    display: none;
+  }
+
   .nav-menu-toggle{
     display: none
-  }
-  .header-navegation-out li{
-    display: inline-block;
-    margin: 0px;
-    border-bottom: none;
-    padding: 0px 20px;
   }
   .nav-categorias{
     color: black;
@@ -705,6 +723,7 @@ border-bottom: 15px;
     color: black;
     /*text-transform: uppercase*/;
     font-weight: 600;
+    outline: none;
   }
   .nav-categorias:hover{
     font-weight: 600;
@@ -735,9 +754,7 @@ border-bottom: 15px;
   }
   /*main*/
   .contenedor-main{
-    position: relative;
-    padding-top: 30px;
-    padding: 30px 38px 0px 38px;
+    padding: 151px 38px 0px 38px;
   }
   .content-module-index{
     display: none;
