@@ -724,6 +724,7 @@ position: fixed;
     /*text-transform: uppercase*/;
     font-weight: 600;
     outline: none;
+    border-bottom: none;
   }
   .nav-categorias:hover{
     font-weight: 600;
@@ -877,28 +878,28 @@ position: fixed;
  element.style {
   margin-top: 26px;
   margin-left: 19px;
-}
-.text-politica{
+  }
+  .text-politica{
   margin-top: 20px;
-}
-.footer-link{
+  }
+  .footer-link{
   border-bottom: none;
   float: right;
   margin-top: -211px;
   margin-right: 304px;
   border-left: 1px solid #ddd;
   height: 278px;
-}
-.footer-redes-sociailes{
+  }
+  .footer-redes-sociailes{
   margin-right: none;
   margin-left: 53px;
   padding-bottom: 30px;
   padding-top: 17px;
-}
-.link-ubicacion{
+  }
+  .link-ubicacion{
   margin-left: 194px;
-}
-.link-edit-desktop{
+  }
+  .link-edit-desktop{
   margin-top: 84px;
-}
+  }
 }

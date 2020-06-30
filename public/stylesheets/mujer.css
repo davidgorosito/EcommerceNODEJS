@@ -16,7 +16,7 @@ a:hover{
 }
 
 .main-categorias{
-    margin: 30px 0px;
+    padding: 187px 0px;
 }
 .categoria-generales{
     width: 480px;
@@ -64,6 +64,7 @@ a:hover{
 }
 .dropdown{
     margin-left: 20px;
+    position: inherit;
 }
 .btn{
     width: 440px;
@@ -94,7 +95,9 @@ a:hover{
     left: -21px;
     letter-spacing: .05rem;
     border-radius: 0px;
+    margin-top: 218px;
 }
+
 .show>.btn-secondary.dropdown-toggle{
     color:black;
     background-color: transparent;
