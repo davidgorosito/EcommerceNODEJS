@@ -16,13 +16,16 @@ a:hover{
 }
 
 .main-categorias{
-    padding: 187px 0px;
+    padding: 168px 0px;
 }
 .categoria-generales{
     width: 480px;
-    display: none;
+    
 }
 .categorias-arriba{
+    margin: 20px 20px;
+}
+.categorias-abajo{
     margin: 20px 20px;
 }
 .categoria-izq{
@@ -157,3 +160,12 @@ p.titulo-producto{
     color: #767676;
     vertical-align: super;
 }
+@media screen and  (min-width:770px){
+    .dropdown{
+        display: none;
+    }
+    .categoria-generales{
+        display: inline;
+    }
+}
+    

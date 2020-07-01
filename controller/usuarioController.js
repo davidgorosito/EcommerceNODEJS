@@ -47,14 +47,11 @@ let usuarioController={
                       }
                 }else{
                       res.render("login",{errors})
-                     }
+                    }
                 } else{
                       res.render("login",{errors})
-                       } 
-
-
-
+                    } 
     }
- }
+}
 
 module.exports = usuarioController;
