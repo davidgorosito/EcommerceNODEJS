@@ -170,16 +170,17 @@ position: fixed;
   border-bottom: 1px solid #ddd;
 }
 
-  .logo-header{
-    grid-area: logo;
-    align-items: center;
-    text-align: center;
-  }
+.logo-header{
+  grid-area: logo;
+  align-items: center;
+  text-align: center;
+  z-index: 50;
+}
 .img-logo{
   width: 58px;
   height: auto;
   align-items: center;
-  margin: -158px 0px 0px 0px;
+  margin: 18px 0px 16px 0px;
 }
 .img-logo-desktop{
   display: none;
@@ -741,8 +742,8 @@ position: fixed;
   .img-logo-desktop{
     display: inline-block;
     width: 170px;
-    margin-top: -4px;
-    margin-left: -709px;
+    margin-top: 15px;
+    margin-right: 113px;
   }
   .utilidades-header-buscador{
     display: none;
