@@ -170,16 +170,16 @@ position: fixed;
   border-bottom: 1px solid #ddd;
 }
 
-.logo-header{
-  grid-area: logo;
-  align-items: center;
-  text-align: center;
-}
+  .logo-header{
+    grid-area: logo;
+    align-items: center;
+    text-align: center;
+  }
 .img-logo{
   width: 58px;
   height: auto;
   align-items: center;
-  margin: 18px 0px 16px 0px;
+  margin: -158px 0px 0px 0px;
 }
 .img-logo-desktop{
   display: none;
@@ -718,10 +718,8 @@ position: fixed;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    /*padding: 7px;*/
     margin: 0px;
     color: black;
-    /*text-transform: uppercase*/;
     font-weight: 600;
     outline: none;
     border-bottom: none;
@@ -733,6 +731,7 @@ position: fixed;
   .nav-cate-iniciarSesion{
     display: none;
   }
+  
   .desktop-no{
     display: none;
   }
@@ -742,8 +741,8 @@ position: fixed;
   .img-logo-desktop{
     display: inline-block;
     width: 170px;
-    margin-top: 15px;
-    margin-right: 113px;
+    margin-top: -4px;
+    margin-left: -709px;
   }
   .utilidades-header-buscador{
     display: none;
