@@ -229,16 +229,16 @@ p.titulo-producto{
     .categoria-izq-abajo {
         margin-right: 10px;
     }
+    .cate-titulo {
+        top: 178px;
+    }
     .cate-titulo-abajo{
-        position: absolute;
-        top: 191px;
-        width: 100%;
-        padding-left: 4px;
+        top: 178px;
     }
     .cate-titulo-abajo-derecha{
         margin-left: 729px;
         padding-left: 0px;
-        top: 191px;
+        top: 178px;
     }
 
 }
