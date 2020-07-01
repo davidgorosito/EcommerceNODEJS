@@ -1,7 +1,8 @@
 const fs= require('fs');
 const path = require('path')
 //const bcrypt=require('bcrypt');
-const { json }= require('express')
+const { json }= require('express');
+const { validationResult } = require('express-validator');
 
 let usuarioJson = path.join(__dirname, '../data/DBusuarios.json');
 let arrayUsuarios = JSON.parse(fs.readFileSync(usuarioJson,'utf-8'));
@@ -31,6 +32,28 @@ let usuarioController={
         
     })
     //  res.redirect('crear-cuenta')
+    //agruege la validacion //faltan hacer las cockies todavia y los check
+    },processLogin:( req, res)=>{
+         let validation= validationResult(req)
+         let errors= validation.errors;
+         if( errors ==""){
+             let user = arrayUsuarios.find(userToLog=>userToLog.email == req.body.email);
+             if (user!= undefined){
+                 if(bcrypt.compareSync(req.body.password,user.password)){
+                     req.session.userId =user.id
+                     res.redirect("/")
+                 }else{
+                     res.render("login",{errors})
+                      }
+                }else{
+                      res.render("login",{errors})
+                     }
+                } else{
+                      res.render("login",{errors})
+                       } 
+
+
+
     }
  }
 
