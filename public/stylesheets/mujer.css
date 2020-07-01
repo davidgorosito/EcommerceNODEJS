@@ -28,7 +28,7 @@ a:hover{
 .categorias-abajo{
     margin: 20px 20px;
 }
-.categoria-izq{
+.categoria-izq-arriba{
     float:right;
 }
 .img-categoria{
@@ -41,7 +41,7 @@ a:hover{
     width: 100%;
     padding-left: 4px;
 }
-.categoria-derecha{
+.categoria-derecha-arriba{
     display: inline;
 }
 .categoria-texto{
@@ -52,7 +52,19 @@ a:hover{
     line-height: 1;
     font-family: helvetica;
 }
+.categoria-izq-abajo{
+    float:right;
+}
+.categoria-derecha-abajo{
+    display: inline;
+}
 .cate-titulo-abajo{
+    position: absolute;
+    top: 385px;
+    width: 100%;
+    padding-left: 4px;  
+}
+.cate-titulo-abajo-derecha{
     position: absolute;
     top: 385px;
     width: 100%;
@@ -160,12 +172,74 @@ p.titulo-producto{
     color: #767676;
     vertical-align: super;
 }
+@media screen and  (min-width:481px){
+    .main-categorias {
+        padding: 133px 0px;
+    }
+    .categoria-generales {
+        width: 100%;
+    }
+    .img-categoria {
+        height: 280px;
+    }
+    .cate-titulo{
+        top: 160px;
+    }
+    .cate-titulo-abajo-derecha {
+        top: 458px;
+    }
+    .cate-titulo-abajo {
+        top: 458px;
+    }
+    .categorias-arriba {
+        margin: 20px 30px;
+    }
+    .categorias-abajo {
+        margin: 20px 30px;
+    }
+}
+
 @media screen and  (min-width:770px){
     .dropdown{
         display: none;
     }
+    .main-categorias {
+        padding: 151px 0px;
+    }
+    .img-categoria{
+        height: 260px;
+    }
     .categoria-generales{
         display: inline;
     }
+    .categorias-arriba{
+        display: block;
+    }
+    .categoria-izq-arriba {
+        float: left;
+        margin-left: 10px;
+    }
+    .categoria-derecha-arriba {
+        float: left;
+        margin-left: 40px;
+    }
+    .categoria-derecha-abajo {
+        margin-left: 40px;
+    }
+    .categoria-izq-abajo {
+        margin-right: 10px;
+    }
+    .cate-titulo-abajo{
+        position: absolute;
+        top: 191px;
+        width: 100%;
+        padding-left: 4px;
+    }
+    .cate-titulo-abajo-derecha{
+        margin-left: 729px;
+        padding-left: 0px;
+        top: 191px;
+    }
+
 }
     

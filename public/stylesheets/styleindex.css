@@ -24,6 +24,7 @@ a:hover{
 width: 100%;
 border-bottom: 15px;
 position: fixed;
+z-index: 50;
 }
 
 .notificacion{
