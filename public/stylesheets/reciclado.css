@@ -4,6 +4,29 @@
   padding: 0px;
 }
 
+.tierra {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  border-radius: 50%;
+  background: url(../images\ 2/tierraaa.jpg);
+	background-size: cover;
+
+	-webkit-animation: tierra-girando 5s infinite linear;
+}
+@-webkit-keyframes tierra-girando {
+	from {
+		background-position: 0 center;
+	}
+  to {
+		background-position: -398px center;
+	}
+}
 html body{
   width: 100%;
   max-width: 100%;
@@ -19,9 +42,9 @@ a:hover{
   width: 100%;
   padding-top: 188px;
 }
-.principal-reciclaje{
+/* .principal-reciclaje{ */
   /*width: 480px;*/
-}
+/* } */
 .imag-reciclado{
   width: 480px;
   height: auto;
@@ -32,12 +55,17 @@ a:hover{
   width: 100%;
 }
 .banner-texto{
-  background: transparent;
-  color: #fff;
+  /* background: transparent; */
+  background-image: url(https://media.giphy.com/media/u1ntxwWK5fNf2/giphy.gif);
+  background-position: center;
+  -webkit-background-clip: text;
+  /* color: black; */
+  color: transparent;
   font-size: 43px;
   letter-spacing: -0.08rem;
   line-height: 1;
-  text-align: center
+  text-align: center;
+  top: 25;
 }
 .cont-info{
   padding:40px 50px 40px 50px;
@@ -78,6 +106,9 @@ a:hover{
   width: 480px;
   position: relative;
   margin-bottom: 46px;
+}
+.final-reciclaje img{
+  border-radius: 45%;
 }
 .imag-final{
   width: 380px;
@@ -145,7 +176,7 @@ a:hover{
   }
   .final-reciclaje {
     width: 1440px;
-}
+  }
   .imag-final {
     width: 890px;
     height: 600px;
@@ -153,7 +184,7 @@ a:hover{
   }
   .banner-final-recic {
     top: 186px;
-}
+  }
   .banner-texto-final {
     font-size: 36px;
     margin: 89px 430px 0px 380px;
