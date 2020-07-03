@@ -25,5 +25,5 @@ router.get('/hombres', indexController.hombres)
 router.get('/children', indexController.children)
 router.get('/accesorios', indexController.accesorios)
 router.get('/mujer', indexController.mujer)
-
+router.get('/camperas-mujer', indexController.camperasM)
 module.exports = router;
