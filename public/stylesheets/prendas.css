@@ -112,7 +112,7 @@ a:hover{
     left: -21px;
     letter-spacing: .05rem;
     border-radius: 0px;
-    margin-top: 218px;
+    margin-top: 314px;
 }
 
 .show>.btn-secondary.dropdown-toggle{
@@ -186,7 +186,9 @@ p.titulo-producto{
         width: 229.63px;
         height: auto;
     }
-    
+    .dropdown-menu.show {
+        margin-top: 280px;
+    }
 }
 
 
