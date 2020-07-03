@@ -172,6 +172,10 @@ p.titulo-producto{
     color: #767676;
     vertical-align: super;
 }
+.categoria-desktop{
+    display: none;
+}
+
 @media screen and  (min-width:481px){
     .main-categorias {
         padding: 133px 0px;
@@ -198,6 +202,7 @@ p.titulo-producto{
         margin: 20px 30px;
     }
 }
+
 
 @media screen and  (min-width:770px){
     .dropdown{
@@ -248,6 +253,9 @@ p.titulo-producto{
         margin-bottom: 30px;
     }
     /*aca arranca el main con grilla*/
+    .categoria-desktop{
+        display: block;
+    }
     .categoria-grillas{
         padding-right: 60px;
         padding-left: 60px;
