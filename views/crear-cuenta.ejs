@@ -10,7 +10,7 @@
 <%- include('./partials/header.ejs') %> 
     <div class="wrap">
         <img src="../nuevo tp/logo4.png" alt="">
-    <form class="box" action="" method="POST">
+    <form class="box" action="users/register" method="POST" enctype="multipart/form-data"> 
 
         <div class="container2">
         <h1>Registrate</h1>
@@ -56,11 +56,13 @@
         <label for="datos" class="titulos">Datos De Acceso</label>
         <br>
         
-        <input type="text" placeholder="Correo Electronico">
+        <input type="email" name="email" placeholder="Correo Electronico">
         <!-- <br>
         <br> -->
-        <input type="text" placeholder="Contraseña">
+        <input type="password" name="contraseña" placeholder="Contraseña">
         <br>
+        <label for="text"> subi tu foto de perfil</label>
+        <input type="file" name="avatar">
         
         <div class="aceptarterminos">
             <input type="checkbox" name="checkbox" id="notificaciones">

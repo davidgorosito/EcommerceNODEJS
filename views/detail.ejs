@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head.ejs') %> 
-
+<%- include('./partials/head.ejs') %> 
 <body>
 <%- include('./partials/header.ejs') %> 
-     <div class="col-12 col-sm-6 col-lg-3">
-        
-      <section class="product-box">
-				<article class="product-box_data">
-                    <h2><%= productDetail.name %> </h2>
-					<h2><%= productDetail.price %> </h2>
-					<span><%=productDetail.discount%> % OFF</span>
-					<p><%= productDetail.description%> </p>
-					<i class="fas fa-truck"></i>
-				</article>
-        <form action="/producto/delete/<%= productDetail.Id %>?_method=delete" method="POST" >
-          <button type="submit" class="btn btn-danger" >eliminar producto</button>
-        </form>
-      </section>
+    <main class="main-categorias">
+        <div class="categoria-generales">
+            <div class="categorias-arriba">
+                <div class="categoria-izq">
+                    <a href="#"><img src="../images/pantalonm.png" alt="" class="img-categoria"></a> 
+                     <div class="cate-titulo">
+                         <h1 class="categoria-texto">Calzas</h1>
+                     </div>
+                 </div>
+                 <div class="categoria-derecha">
+                    <a href="#"><img src="../images/topm.png" alt="" class="img-categoria"></a> 
+                     <div class="cate-titulo">
+                         <h1 class="categoria-texto">Tops</h1>
+                     </div>
+                 </div>
+            </div>
+            <div class="categorias-arriba">
+                <div class="categoria-izq">
+                    <a href="#"><img src="../images/zapatillasm.png" alt="" class="img-categoria"></a> 
+                     <div class="cate-titulo-abajo">
+                         <h1 class="categoria-texto">Zapatillas</h1>
+                     </div>
+                 </div>
+                 <div class="categoria-derecha">
+                    <a href="#"><img src="../images/buzom.png" alt="" class="img-categoria"></a> 
+                     <div class="cate-titulo-abajo">
+                         <h1 class="categoria-texto">Buzo</h1>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorías
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Nuevo</a>
+              <a class="dropdown-item" href="#">Tops</a>
+              <a class="dropdown-item" href="#">Buzos</a>
+              <a class="dropdown-item" href="#">Camperas</a>
+              <a class="dropdown-item" href="#">Pantalones y calzas</a>
+              <a class="dropdown-item" href="#">Shorts</a>
+              <a class="dropdown-item" href="#">Conjuntos</a>
+              <a class="dropdown-item dropdown-ultimo" href="#">Sale</a>
+            </div>
+        </div>   
+            <div class="detalle-productos">
+              <section class="product-box">
+                <article class="product-box_data">
+                            <h2><%= productDetail.name %> </h2>
+                  <h2><%= productDetail.price %> </h2>
+                  <span><%=productDetail.discount%> % OFF</span>
+                  <p><%= productDetail.description%> </p>
+                  <i class="fas fa-truck"></i>
+                </article>
+                <form action="/producto/delete/<%= productDetail.Id %>?_method=delete" method="POST" >
+                  <button type="submit" class="btn btn-danger" >eliminar producto</button>
+                </form>
+        </div>    
+    </main>
 <%- include('./partials/footer.ejs') %>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>
