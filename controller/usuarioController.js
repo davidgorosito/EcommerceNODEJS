@@ -20,8 +20,9 @@ let usuarioController={
             email: req.body.email,
             genero: req.body.genero,
             password:bcrypt.hashSync(req.body.contraseña,10),
-            avatar:filename[0].name
-        },
+            avatar:req.files[0].filename
+         
+        }
         arrayUsuarios = [...arrayUsuarios, nuevoUsuario];
         fs.writeFileSync(usuarioJson,JSON.stringify(arrayUsuarios, null, "usuarios"));
         res.redirect('/index');

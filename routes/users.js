@@ -4,6 +4,17 @@ const usuarioController = require('../controller/usuarioController')
 var path =require('path');
 const multer = require('multer');
 
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'images/users')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+  }
+})
+ 
+var upload = multer({ storage: storage })
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -11,24 +22,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/register',usuarioController.register);
-//router.post('/register',upload.any(),usuarioController.crear);
+router.post('/register',upload.any(),usuarioController.crear);
 
 router.get('/login',usuarioController.login)
 
-
-
-
-// multer 
-var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, '/tmp/my-uploads')
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now())
-  }
-})
- 
-var upload = multer({ storage: storage })
 
 
 module.exports = router;
