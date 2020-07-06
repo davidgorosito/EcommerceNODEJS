@@ -48,6 +48,12 @@ let indexController={
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
     },
+    saleM: (req,res)=>{
+        res.render('sale-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
     hombres: (req,res)=>{
         res.render('hombres',{
             titulo: "Proyecto",

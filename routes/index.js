@@ -29,4 +29,5 @@ router.get('/camperas-mujer', indexController.camperasM)
 router.get('/pantalones-mujer', indexController.pantalonesM)
 router.get('/shorts-mujer', indexController.shortsM)
 router.get('/conjuntos-mujer', indexController.conjuntoM)
+router.get('/sale-mujer', indexController.saleM)
 module.exports = router;
