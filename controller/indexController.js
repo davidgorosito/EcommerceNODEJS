@@ -31,7 +31,13 @@ let indexController={
         })
     },
     pantalonesM: (req,res)=>{
-        res.render('camperas-mujer',{
+        res.render('pantalones-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
+    shortsM: (req,res)=>{
+        res.render('shorts-mujer',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
