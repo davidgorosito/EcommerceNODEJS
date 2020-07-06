@@ -226,6 +226,15 @@ p.titulo-producto{
     .dropdown-menu.show {
         margin-top: 280px;
     }
+    .cate-titulo{
+        top: 195px;
+    }
+    .cate-titulo-abajo {
+        top: 495px;
+    }
+    .cate-titulo-abajo-derecha{
+        top: 495px;
+    }
 }
 
 
