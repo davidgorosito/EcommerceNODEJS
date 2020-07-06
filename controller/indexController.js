@@ -24,6 +24,18 @@ let indexController={
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
     },
+    nuevoM: (req,res)=>{
+        res.render('nuevo-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
+    topsM: (req,res)=>{
+        res.render('tops-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
     camperasM: (req,res)=>{
         res.render('camperas-mujer',{
             titulo: "Proyecto",
