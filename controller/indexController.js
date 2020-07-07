@@ -36,6 +36,12 @@ let indexController={
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
     },
+    buzoM: (req,res)=>{
+        res.render('buzos-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
     camperasM: (req,res)=>{
         res.render('camperas-mujer',{
             titulo: "Proyecto",
@@ -56,6 +62,12 @@ let indexController={
     },
     conjuntoM: (req,res)=>{
         res.render('conjuntos-mujer',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
+    zapatillasM: (req,res)=>{
+        res.render('zapatillas-mujer',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
