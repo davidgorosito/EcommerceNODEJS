@@ -78,8 +78,22 @@ let indexController={
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
     },
-    hombres: (req,res)=>{
-        res.render('hombres',{
+    hombre: (req,res)=>{
+        res.render('hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    nuevoH: (req,res)=>{
+        res.render('nuevo-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    remerasH: (req,res)=>{
+        res.render('remeras-hombre',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
