@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/form-register.css">
-    <%- include('partials/head.ejs') %> 
+    <link rel="stylesheet" href='/stylesheets/styleindex.css'>
 </head>
-<body class="body">
-    <%- include('partials/header.ejs') %> 
-    <img src="../nuevo tp/logo4.png" alt="">
+    
+
+<body class="iñaki">
+
+    <%- include('./partials/header.ejs') %> 
+    <img src="../nuevo tp/logo4.png" alt=""> 
+    <div class="container">
     <form class="box" action="" method="POST">
         
-        <div class="container">
+       
             <h1 >Iniciar Sesion</h1>
             <label for="mail" style="font-size: 30px;" class="titulos">Correo electronico</label>
 
@@ -32,9 +33,9 @@
 
         </form>
         <br>
-        <a class="crear" href="crear-cuenta.html" style="color: black;">Crear Cuenta</a>
+        <a class="crear" href="/users/register" style="color: black;">Crear Cuenta</a>
     </div>
-    <%- include('partials/footer.ejs') %> 
+    <%- include('./partials/footer.ejs') %> 
 
 </body>
 </html>

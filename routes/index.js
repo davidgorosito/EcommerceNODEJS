@@ -3,6 +3,7 @@ var router = express.Router();
 var productController = require('../controller/productController')
 let indexController= require('../controller/indexController')
 
+
 /* GET home page. */
 router.get('/', indexController.home);
 // form de crear producto
