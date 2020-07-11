@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main class="main-categorias">
+        <div class="nav-prenda">
+            <div class="prenda-grilla">
+                <nav role="navigation" aria-label="breadcrumb navigation" class="una-prenda">
+                    <ol class="lista-mujer">
+                        <li class="ruta-mujer"><a href="/mujer" class="ruta-mujer-link">Mujer</a></li>
+                        <li class="ruta-mujer"><span>Nuevo</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="titulo-prenda">
+            <h1 class="titulo-prenda-detalle"> 
+                Nueva ropa de Mujer
+            </h1>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorías
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/nuevo-mujer">Nuevo</a>
+              <a class="dropdown-item" href="/tops-mujer">Tops y Remeras</a>
+              <a class="dropdown-item" href="/buzos-mujer">Buzos</a>
+              <a class="dropdown-item" href="/camperas-mujer">Camperas</a>
+              <a class="dropdown-item" href="/pantalones-mujer">Pantalones y calzas</a>
+              <a class="dropdown-item" href="/shorts-mujer">Shorts</a>
+              <a class="dropdown-item" href="/conjuntos-mujer">Conjuntos</a>
+              <a class="dropdown-item dropdown-ultimo" href="/zapatillas-mujer">Zapatillas</a>
+              <a class="dropdown-item dropdown-ultimo" href="/sale-mujer">Sale</a>
+            </div>
+        </div>
+        <div class="categoria-desktop">
+            <div class="categoria-grillas">
+                <div aria-live="polite" class="titulo-categorias">
+                    <h1 class="titulo-categorias-titulo">
+                    Nueva ropa de Mujer </h1> 
+                    <p class="titulo-resultado"><span class="titulo-resultado-cont">
+                        520 resultados</span></p>
+                </div>
+                <div class="clasificaciones">
+                   <div class="clasificaciones-formato">
+                       <div class="categoria-left">
+                           <h2 class="comprar-por-categoria">
+                               Comprar por Categoría:
+                           </h2>
+                           <div class="categoria-left-nav">
+                               <div class="categoria-left-navegador">
+                                   <div class="categoria-left-nav-subtitulo">
+                                       <a href="/mujer" class="subtitulo-detalles">Todo</a>
+                                   </div>
+                                   <ul class="cate-left-lista">
+                                    <li class="cate-left-lista-items">
+                                        <div class="left-nav">
+                                            <div class="left-nav-link">
+                                                <a href="/nuevo-mujer" class="link-detalles link-activo">Nuevo</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                             <a href="/tops-mujer" class="link-detalles">Tops y Remeras</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                             <a href="/buzos-mujer" class="link-detalles">Buzos</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                            <a href="/camperas-mujer" class="link-detalles">Camperas</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                            <a href="/pantalones-mujer" class="link-detalles">Pantalones y calzas</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                             <a href="/shorts-mujer" class="link-detalles">Shorts</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                             <a href="/conjuntos-mujer" class="link-detalles">Conjuntos</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="cate-left-lista-items">
+                                    <div class="left-nav">
+                                        <div class="left-nav-link">
+                                            <a href="/zapatillas-mujer" class="link-detalles">Zapatillas</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="cate-left-lista-items">
+                                     <div class="left-nav">
+                                         <div class="left-nav-link">
+                                             <a href="/sale-mujer" class="link-detalles">Sale</a>
+                                         </div>
+                                     </div>
+                                 </li>
+                                </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="varios-productos-desktop">
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+
+        </div>
+        <div class="varios-productos">
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/nuevoM.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div aria-hidden="true" class="grilla-mas-info">
+            <div class="para-desktop"></div>
+            <div class="grilla-mas-info-end">
+                <div class="mas-info-detalle">
+                    <div class="">
+                        <div class="mas-info-texto">
+                            <h2>Pantalones y calzas de Mujeres</h2> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at suscipit aliquid expedita deleniti quam, architecto a consequuntur earum, ullam similique pariatur voluptatibus. Perspiciatis odio cumque molestiae enim, velit commodi! <a href="/camperas-mujer">Camperas</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum deleniti quasi ipsam eaque quos est.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>  
+    </main>
+    <%- include('./partials/footer.ejs') %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</body>
+</html>

@@ -167,6 +167,16 @@ p.titulo-producto{
     font-size: 12px;
     letter-spacing: .02rem;
 }
+.sale-mujer{
+    color:red;
+    margin-right: 5px;
+    float: left;
+}
+.sale-mujer-tachado{
+    text-decoration: line-through;
+    margin-right: 12px;
+    white-space: nowrap;
+}
 .detalle-colores{
     margin-bottom: 10px;
     font: 12px/1.3 Helvetica,Arial,sans-serif;
@@ -225,6 +235,15 @@ p.titulo-producto{
     }
     .dropdown-menu.show {
         margin-top: 280px;
+    }
+    .cate-titulo{
+        top: 195px;
+    }
+    .cate-titulo-abajo {
+        top: 495px;
+    }
+    .cate-titulo-abajo-derecha{
+        top: 495px;
     }
 }
 

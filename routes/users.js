@@ -24,7 +24,8 @@ router.get('/', function(req, res, next) {
 router.get('/register',usuarioController.register);
 router.post('/register',upload.any(),usuarioController.crear);
 
-router.get('/login',usuarioController.login)
+router.get('/login',usuarioController.login);
+router.post('/login',usuarioController.processLogin);
 
 
 
