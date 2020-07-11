@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="stylesheets/tyleindex.css">
 <body>
-<%- include('./partials/header.ejs') %> 
+  <div class="cont-body"> 
+  <%- include('./partials/header.ejs') %>
     <main class="main-categorias">
         <div class="categoria-generales">
             <div class="categorias-arriba">
@@ -63,7 +65,6 @@
                 </form>
         </div>    
     </main>
-<%- include('./partials/footer.ejs') %>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+<%- include('partials/footer.ejs') %>
 </body>
 </html>

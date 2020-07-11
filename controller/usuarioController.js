@@ -1,6 +1,6 @@
 const fs= require('fs');
 const path = require('path')
-//const bcrypt=require('bcrypt');
+const bcrypt=require('bcryptjs');
 const { json }= require('express');
 const { validationResult } = require('express-validator');
 
@@ -25,7 +25,7 @@ let usuarioController={
         }
         arrayUsuarios = [...arrayUsuarios, nuevoUsuario];
         fs.writeFileSync(usuarioJson,JSON.stringify(arrayUsuarios, null, "usuarios"));
-        res.redirect('/index');
+        res.redirect('/');
      },
         login: (req, res)=>{
         res.render('login',{ titulo: "Proyecto",
