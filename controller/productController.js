@@ -1,8 +1,15 @@
 const fs= require('fs');
 const path= require('path');
 const bcrypt= require ('bcryptjs');
+<<<<<<< HEAD
 //traigo la base de datos 
 
+=======
+
+
+//base de datos sql 
+const DB = require('../src/database/models')
+>>>>>>> 6964cc756e7d6353c855e431d3de2b180f79e415
 
 
 let productController={
@@ -43,9 +50,11 @@ let productController={
         fs.writeFileSync(productsJson,JSON.stringify(nuevoarrayDeProducts,null," "))
     },
     listar: (req , res)=>{
-        res.render('listado-productos',{products,
-            titulo: "Proyecto",
-            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        DB.sequelize.query('SELECT * FROM productos')
+        .then((listado)=>{
+            res.send(listado)
+        }).catch((error)=>{
+            res.send(error)
         })
     },
     edit : (req , res)=>{
