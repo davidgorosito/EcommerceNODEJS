@@ -99,15 +99,8 @@ let indexController={
         })
 
     },
-    children: (req,res)=>{
-        res.render('children',{
-            titulo: "Proyecto",
-            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
-        })
-
-    },
-    accesorios: (req,res)=>{
-        res.render('hombres',{
+    buzosH: (req,res)=>{
+        res.render('buzos-hombre',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })

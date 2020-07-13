@@ -2,8 +2,7 @@ const fs= require('fs');
 const path= require('path');
 const bcrypt= require ('bcryptjs');
 //traigo la base de datos 
-let productsJson = path.join(__dirname,'../data/db_productos.json');
-const products= JSON.parse(fs.readFileSync(productsJson,'utf-8'));
+
 
 
 let productController={

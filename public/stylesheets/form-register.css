@@ -46,11 +46,11 @@ img {
 
 .box h1{
     color: white;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 139%;
-    letter-spacing: .02rem;
+    font-size: 188%;
+    letter-spacing: .04rem;
 }
 .box input{
     background: none;
@@ -105,12 +105,14 @@ img {
     background: none;
     border: none;
     color: white;
-    padding: 0px 30px;
-    text-align: center;
+    /*padding: 0px 30px;*/
+    /*text-align: center;*/
     text-decoration: none;
     display: inline-block;
     font-size: 94%;
-    margin-top: 5%;
+    margin-top: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .02rem;
 }
 
 @media(min-width: 481px){
@@ -124,5 +126,19 @@ img {
     .body{
         /* background-image: url(../adidas.jpg); */
         image-rendering: auto;
+    }
+    .img-logo-desktop {
+        display: inline-block;
+        width: 249px;
+        margin-top: 9%;
+        /* margin-right: 125px; */
+        margin-left: -43%;
+    }
+    .utilidades-header-buscador-desktop {
+        display: inline-block;
+        margin-top: 8.6%;
+        margin-left: 39%;
+        /* margin-right: 19%; */
+        width: 21%;
     }
 }
