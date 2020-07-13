@@ -37,4 +37,6 @@ router.get('/nuevo-hombre', indexController.nuevoH)
 router.get('/remeras-hombre', indexController.remerasH)
 router.get('/buzos-hombre', indexController.buzosH)
 router.get('/camperas-hombre', indexController.camperasH)
+router.get('/pantalones-hombre', indexController.pantalonesH)
+router.get ('/shorts-hombre', indexController.shortsH)
 module.exports = router;

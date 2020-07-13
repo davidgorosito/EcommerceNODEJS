@@ -113,6 +113,21 @@ let indexController={
         })
 
     },
+    pantalonesH: (req,res)=>{
+        res.render('pantalones-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    shortsH: (req,res)=>{
+        res.render('shorts-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    
 }
 
 module.exports=indexController;
