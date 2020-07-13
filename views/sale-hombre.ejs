@@ -4,35 +4,20 @@
 <body>
     <%- include('./partials/header.ejs') %> 
     <main class="main-categorias">
-        <div class="categoria-generales">
-            <div class="categorias-arriba">
-                <div class="categoria-izq-arriba">
-                    <a href="/shorts-hombre"><img src="../images/shortH2.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo">
-                         <h1 class="categoria-texto">Shorts</h1>
-                     </div>
-                 </div>
-                 <div class="categoria-derecha-arriba">
-                    <a href="/remeras-hombre"><img src="../images/remeraH1.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo">
-                         <h1 class="categoria-texto">Remeras</h1>
-                     </div>
-                 </div>
+        <div class="nav-prenda">
+            <div class="prenda-grilla">
+                <nav role="navigation" aria-label="breadcrumb navigation" class="una-prenda">
+                    <ol class="lista-mujer">
+                        <li class="ruta-mujer"><a href="/hombre" class="ruta-mujer-link">hombre</a></li>
+                        <li class="ruta-mujer"><span>Sale</span></li>
+                    </ol>
+                </nav>
             </div>
-            <div class="categorias-abajo">
-                <div class="categoria-izq-abajo">
-                    <a href="/zapatillas-hombre"><img src="../images/zapatillasH3.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo-abajo">
-                         <h1 class="categoria-texto">Zapatillas</h1>
-                     </div>
-                 </div>
-                 <div class="categoria-derecha-abajo">
-                    <a href="/buzos-hombre"><img src="../images/buzoH1.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo-abajo-derecha">
-                         <h1 class="categoria-texto">Buzo</h1>
-                     </div>
-                 </div>
-            </div>
+        </div>
+        <div class="titulo-prenda">
+            <h1 class="titulo-prenda-detalle"> 
+                Ropa de Hombre
+            </h1>
         </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,12 +25,12 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="/nuevo-hombre">Nuevo</a>
-              <a class="dropdown-item" href="/remeras-hombre">Remeras</a>
+              <a class="dropdown-item" href="/remeras-hombre">Tops y Remeras</a>
               <a class="dropdown-item" href="/buzos-hombre">Buzos</a>
               <a class="dropdown-item" href="/camperas-hombre">Camperas</a>
-              <a class="dropdown-item" href="/pantalones-hombre">Pantalones</a>
+              <a class="dropdown-item" href="/pantalones-hombre">Pantalones y calzas</a>
               <a class="dropdown-item" href="/shorts-hombre">Shorts</a>
-              <a class="dropdown-item dropdown-ultimo" href="/zapatillas-hombre">Zapatillas</a>
+              <a class="dropdown-item" href="/zapatillas-hombre">Zapatillas</a>
               <a class="dropdown-item dropdown-ultimo" href="/sale-hombre">Sale</a>
             </div>
         </div>
@@ -53,9 +38,9 @@
             <div class="categoria-grillas">
                 <div aria-live="polite" class="titulo-categorias">
                     <h1 class="titulo-categorias-titulo">
-                    Ropa de Hombre</h1> 
+                    Sale de Hombre </h1> 
                     <p class="titulo-resultado"><span class="titulo-resultado-cont">
-                        4524 resultados</span></p>
+                        330 resultados</span></p>
                 </div>
                 <div class="clasificaciones">
                    <div class="clasificaciones-formato">
@@ -93,21 +78,21 @@
                                  <li class="cate-left-lista-items">
                                      <div class="left-nav">
                                          <div class="left-nav-link">
-                                             <a href="/camperas-hombre" class="link-detalles">Camperas</a>
+                                            <a href="/camperas-hombre" class="link-detalles">Camperas</a>
                                          </div>
                                      </div>
                                  </li>
                                  <li class="cate-left-lista-items">
                                      <div class="left-nav">
                                          <div class="left-nav-link">
-                                             <a href="/pantalones-hombre" class="link-detalles">Pantalones</a>
+                                            <a href="/pantalones-hombre" class="link-detalles">Pantalones</a>
                                          </div>
                                      </div>
                                  </li>
                                  <li class="cate-left-lista-items">
                                      <div class="left-nav">
                                          <div class="left-nav-link">
-                                             <a href="/shorts-hombre" class="link-detalles">Shorts</a>
+                                            <a href="/shorts-hombre" class="link-detalles">Shorts</a>
                                          </div>
                                      </div>
                                  </li>
@@ -121,13 +106,12 @@
                                  <li class="cate-left-lista-items">
                                      <div class="left-nav">
                                          <div class="left-nav-link">
-                                             <a href="/sale-hombre" class="link-detalles">Sale</a>
+                                            <a href="/sale-hombre" class="link-detalles link-activo">Sale</a>
                                          </div>
                                      </div>
                                  </li>
                                 </ul>
                                </div>
-
                            </div>
                        </div>
                    </div>
@@ -135,36 +119,13 @@
                 <div class="varios-productos-desktop">
                     <div class="detalle-productos-desktop">
                         <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                             <p class="titulo-producto">
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -176,91 +137,8 @@
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -272,91 +150,8 @@
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -368,91 +163,8 @@
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH5.jpeg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -464,91 +176,8 @@
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
-                                <p class="detalle-colores">5 colores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detalle-productos-desktop">
-                        <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                            <p class="titulo-producto">
-                                Lorem ipsum dolor sit.
-                            </p></a>
-                            <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -560,19 +189,411 @@
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
                     </div>
                     <div class="detalle-productos-desktop">
                         <div class="cont-img-titulo-desktop">
-                            <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                             <p class="titulo-producto">
                                 Lorem ipsum dolor sit.
                             </p></a>
                             <div>
-                                <p class="detalle-precio">$1.500</p>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                                <p class="detalle-colores">5 colores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-productos-desktop">
+                        <div class="cont-img-titulo-desktop">
+                            <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                            <p class="titulo-producto">
+                                Lorem ipsum dolor sit.
+                            </p></a>
+                            <div>
+                                <p class="detalle-precio sale-mujer">$1.000</p>
+                                <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                                 <p class="detalle-colores">5 colores</p>
                             </div>
                         </div>
@@ -584,36 +605,13 @@
         <div class="varios-productos">
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
-                        <p class="detalle-colores">5 colores</p>
-                    </div>
-                </div>
-            </div>
-            <div class="detalle-productos">
-                <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
-                    <p class="titulo-producto">
-                        Lorem ipsum dolor sit.
-                    </p></a>
-                    <div>
-                        <p class="detalle-precio">$1.500</p>
-                        <p class="detalle-colores">5 colores</p>
-                    </div>
-                </div>
-            </div>
-            <div class="detalle-productos">
-                <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
-                    <p class="titulo-producto">
-                        Lorem ipsum dolor sit.
-                    </p></a>
-                    <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
@@ -625,156 +623,209 @@
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH1.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH2.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH5.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH6.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH7.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH8.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
             <div class="detalle-productos">
                 <div class="cont-img-titulo">
-                    <a href="#"> <img src="../images/variosH3.jpg" alt="foto producto" class="imag-producto">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
                     <p class="titulo-producto">
                         Lorem ipsum dolor sit.
                     </p></a>
                     <div>
-                        <p class="detalle-precio">$1.500</p>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
                         <p class="detalle-colores">5 colores</p>
                     </div>
                 </div>
             </div>
-        </div>    
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-productos">
+                <div class="cont-img-titulo">
+                    <a href="#"> <img src="../images/variosH4.jpg" alt="foto producto" class="imag-producto">
+                    <p class="titulo-producto">
+                        Lorem ipsum dolor sit.
+                    </p></a>
+                    <div>
+                        <p class="detalle-precio sale-mujer">$1.000</p>
+                        <p class="detalle-precio sale-mujer-tachado">$1.500</p>
+                        <p class="detalle-colores">5 colores</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div aria-hidden="true" class="grilla-mas-info">
+            <div class="para-desktop"></div>
+            <div class="grilla-mas-info-end">
+                <div class="mas-info-detalle">
+                    <div class="">
+                        <div class="mas-info-texto">
+                            <h2>Sale de Mujeres</h2> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at suscipit aliquid expedita deleniti quam, architecto a consequuntur earum, ullam similique pariatur voluptatibus. Perspiciatis odio cumque molestiae enim, velit commodi! <a href="/camperas-mujer">Camperas</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum deleniti quasi ipsam eaque quos est.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>  
     </main>
     <%- include('./partials/footer.ejs') %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
