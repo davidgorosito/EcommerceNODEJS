@@ -127,6 +127,20 @@ let indexController={
         })
 
     },
+    zapatillasH: (req,res)=>{
+        res.render('zapatillas-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    saleH: (req,res)=>{
+        res.render('sale-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
     
 }
 
