@@ -1,15 +1,12 @@
 const fs= require('fs');
 const path= require('path');
 const bcrypt= require ('bcryptjs');
-<<<<<<< HEAD
 //traigo la base de datos 
 
-=======
 
 
 //base de datos sql 
 const DB = require('../src/database/models')
->>>>>>> 6964cc756e7d6353c855e431d3de2b180f79e415
 
 
 let productController={
