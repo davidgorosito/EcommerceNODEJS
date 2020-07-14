@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='stylesheets/covid19.css'>
-    <title>Document</title>
-</head>
+<%- include('./partials/head.ejs') %> 
 <body>
-    
+    <%- include('./partials/header.ejs') %> 
+    <main class="main-covid">
+        <div class="nav-prenda">
+            <div class="prenda-grilla">
+                <nav role="navigation" aria-label="breadcrumb navigation" class="una-prenda">
+                    <ol class="lista-mujer">
+                        <li class="ruta-mujer"><a href="/index" class="ruta-mujer-link">Inicio</a></li>
+                        <li class="ruta-mujer"><span>Covid</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="info-covid">
+            <h1 class="titulo-covid">Reabrimos nuestra tienda online</h1>
+            <p class="parrafo-covid">Hace un mes, cerramos nuestra tienda y centros de distribución en pos de cuidar la salud y seguridad de nuestros empleados y clientes. Después de muchas consultas y mucho trabajo duro, nos complace anunciar que tb-ar.com está nuevamente abierta.</p>
+            <h1 class="titulo-covid">Gracias por su paciencia</h1>
+            <p class="parrafo-covid">A medida que nos adaptamos a nuestros nuevos procedimientos de seguridad, el procesamiento de pedidos podría demorar más de lo habitual. Todos los pedidos incluyen envío terrestre gratuito. Se esperan demoras debido a los requisitos de personal y seguridad.</p>
+            <h1 class="titulo-covid">Manteniendo las cosas en perspectiva</h1>
+            <p class="parrafo-covid">Vender ropa no es un servicio esencial. Todos lo sabemos. Más que nada, nos sentimos honrados y extremadamente agradecidos por los profesionales de la salud e higiene de centros sanitarios, los farmacéuticos, los trabajadores de los supermercados y de los servicios de delivery, y todos aquellos que están trabajando duro en este momento. Gracias.</p>
+            <h1 class="titulo-covid">Tienda, reparaciones y distribuidores</h1>
+            <p class="parrafo-covid">Estamos entusiasmados por volver al trabajo, pero nuestros valores no han cambiado. Como siempre, te recomendamos comprar sólo lo que necesitás, comprar productos locales cuando sea posible y reparar lo que ya tenés. Nuestras tienda física y servicios de reparación permanecen cerrados por ahora.</p>
+            <h1 class="titulo-covid">Juntos enfrentamos al virus</h1>
+            <p class="parrafo-covid">Agradecemos las palabras de aliento y apoyo que compartieron con nosotros. Manténgase a salvo, sean amables el uno con el otro y gracias por visitarnos.</p>
+        </div>
+    </main>
+    <div class="cont-sobre-nosotros">
+        <h2 class="sobre-nosotros-titulo">Sobre TB</h2>
+        <p class="sobre-nosotros-texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus, suscipit error iure tempore impedit distinctio temporibus pariatur laboriosam optio accusantium itaque cumque minima! Consectetur eaque non dolores incidunt cupiditate...</p>
+        <a href="#" class="compralo-aqui">
+          Leer más aqui
+        </a>
+      </div>
+    <%- include('./partials/footer.ejs') %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>

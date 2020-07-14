@@ -21,7 +21,7 @@ router.delete('/producto/delete/:id', productController.delete)
 
 
 router.get('/porquereciclado', indexController.recicla)
-router.get('/help/covid19', indexController.covid19)
+router.get('/covid19', indexController.covid19)
 router.get('/mujer', indexController.mujer)
 router.get('/nuevo-mujer', indexController.nuevoM)
 router.get('/tops-mujer', indexController.topsM)
@@ -41,4 +41,5 @@ router.get('/pantalones-hombre', indexController.pantalonesH)
 router.get ('/shorts-hombre', indexController.shortsH)
 router.get ('/zapatillas-hombre', indexController.zapatillasH)
 router.get ('/sale-hombre', indexController.saleH)
+router.get ('/detalles-info', indexController.detallesInfo)
 module.exports = router;

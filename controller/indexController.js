@@ -16,7 +16,10 @@ let indexController={
         })
     },
     covid19: (req,res)=>{
-        res.render('covid19')
+        res.render('covid19',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
     },
     mujer: (req,res)=>{
         res.render('mujer',{
@@ -136,6 +139,13 @@ let indexController={
     },
     saleH: (req,res)=>{
         res.render('sale-hombre',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+
+    },
+    detallesInfo: (req,res)=>{
+        res.render('detalles-info',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
