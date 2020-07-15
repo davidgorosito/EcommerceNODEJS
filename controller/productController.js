@@ -4,7 +4,7 @@ const bcrypt= require ('bcryptjs');
 
 
 //base de datos sql 
-const DB = require('../src/database/models')
+const DB = require('../src/database/models/index')
 
 
 let productController={
