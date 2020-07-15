@@ -7,10 +7,11 @@ var bcryptjs = require('bcryptjs');
 const methodOverride =require('method-override')
 const session = require('express-session')
 const { check, validationResult } = require('express-validator');
-
+const cookie = require('./middlewares/cookieAuth');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const cookieAuth = require('./middlewares/cookieAuth');
 
 var app = express();
 
@@ -24,7 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
-
+app.use(session({secret:"secret"}))
+app.use(cookieAuth)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

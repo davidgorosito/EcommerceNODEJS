@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/stylesheets/crear-cuenta.css">
     <%- include('./partials/head.ejs') %> 
 </head>
-<body class="body">
+<body >
 <%- include('./partials/header.ejs') %> 
     <div class="wrap">
         <img src="../nuevo tp/logo4.png" alt="">
@@ -17,10 +17,10 @@
             <label for="Nombre" class="titulos"> Tu Nombre</label>
             <br>
         
-            <input type="text" placeholder="Nombre(s)" name="Nombre">
+            <input type="text" placeholder="Nombre(s)" name="Nombre" required>
             <br>
         
-            <input type="text" placeholder="Apellido(s)" name="Apellido">
+            <input type="text" placeholder="Apellido(s)" name="Apellido" required>
             <br>
         </div>
         <div>
@@ -40,13 +40,13 @@
             <!-- <label for="Sexo" class="titulos">Sexo</label>
             <br> -->
         
-            <input type="radio" id="hombre" name="genero" value="hombre">
+            <input type="radio" id="hombre" name="genero" value="hombre" required>
             <label for="hombre">Hombre</label>
 
-            <input type="radio" id="Mujer" name="genero" value="Mujer">
+            <input type="radio" id="Mujer" name="genero" value="Mujer" required>
             <label for="Mujer">Mujer</label>
 
-            <input type="radio" id="otro" name="genero" value="otro">
+            <input type="radio" id="otro" name="genero" value="otro" required>
             <label for="otro">Otro</label>
 
         </div>
@@ -56,13 +56,14 @@
         <label for="datos" class="titulos">Datos De Acceso</label>
         <br>
         
-        <input type="email" name="email" placeholder="Correo Electronico">
+        <input type="email" name="email" placeholder="Correo Electronico" required>
         <!-- <br>
         <br> -->
-        <input type="password" name="contraseña" placeholder="Contraseña">
+        <input type="password" name="password" placeholder="Contraseña" required>
         <br>
         <label for=""> subi tu foto de perfil</label>
-        <input type="file" name="avatar">
+        <input type="file" name="avatar" >
+        
         
         <div class="aceptarterminos">
             <input type="checkbox" name="checkbox" id="notificaciones">
@@ -83,7 +84,7 @@
         </div>
 </form>
 </div>
-<!-- <%- include('./partials/footer.ejs') %>  -->
+ <%- include('./partials/footer.ejs') %>  
 </body>
 
 </html>

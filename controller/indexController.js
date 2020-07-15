@@ -1,6 +1,6 @@
-const fs= require('fs');
-const path= require('path');
-const bcrypt= require ('bcryptjs');
+const fs = require('fs');
+const path = require('path');
+const bcrypt = require ('bcryptjs');
 
 let indexController={
     home: (req, res)=> {
