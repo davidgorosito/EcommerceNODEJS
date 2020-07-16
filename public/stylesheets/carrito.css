@@ -30,10 +30,21 @@ section {
 }
 .carritodecompra h2 {
     font-weight: lighter;
-
+}
+.carritoconproductos {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.contenedorcarrito {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    overflow: hidden;
 }
 .resumendecompra{
     width: 25%;
+    height: 0%;
     margin-top: 5%;
     margin-bottom: 50%;
     padding: 15px;
@@ -41,6 +52,7 @@ section {
     background: white;
     border: 1px solid #212529;
     background-color: white;
+    align-self: stretch;
 }
 .continuarbutton {
     background: none;
@@ -48,13 +60,12 @@ section {
     margin: 20px;
     text-align: center;
     border: 2px solid black;
-    transition: 0.25s;
     cursor: pointer;
     color: white;
     background-color: black;
     width: 50%;
-    border-radius: 15%;
     padding: 14px 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .resumendecompra .resumen_div {
     border-bottom: 1px solid black;
