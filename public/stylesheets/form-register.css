@@ -100,7 +100,7 @@
     font: 0.8rem/normal Helvetica,Arial,sans-serif;
     letter-spacing: .05rem;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 21%;
 }
 .contenedor-crear-cuenta{
     display: grid;
@@ -157,7 +157,18 @@
     padding: 0px;
     width: 44px;
 }
-
+.form-control-sm {
+    border: 1px solid gray;
+}
+.utilidades-header{
+    margin-top: 18%;
+}
+.nav-menu {
+    padding: 6px 0px 15px 9px;
+}
+.img-logo {
+    margin: 18px 0px 16px 47px;
+}
 @media(min-width: 481px){
     .container{
         width: 100%;
@@ -200,5 +211,27 @@
         margin-top: 15px;
         margin-right: 113px;
         margin-left: 14%;
+    }
+    .nav-menu {
+        padding: 2% 0px 15px 9px;
+    }
+    .utilidades-header {
+        margin-top: 0;
+    }
+    .boton-iniciar-sesion {
+        margin-left: 6%;
+    }
+    .olvidar-contra{
+        margin-left: 30%;
+    }
+    .recordarme-contenedor input {
+        float: left;
+        margin: 0px;
+        margin-top: 8px;
+        padding: 0px;
+        width: 44px;
+    }
+    .recordarme-contenedor{
+        margin-bottom: 2%;
     }
 }

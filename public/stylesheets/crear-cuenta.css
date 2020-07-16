@@ -199,6 +199,12 @@
 .nav-menu {
     padding: 5px 0px 15px 9px;
 }
+.utilidades-header{
+    margin-top: 18%;
+}
+.form-control-sm {
+    border: 1px solid gray;
+}
 
 @media(min-width: 768px){
     .container2{ border: none;  
