@@ -24,19 +24,23 @@
             <label for="contraseña" style="" class="titulos">Contraseña</label>
 
             <input type="password" placeholder="Contraseña" name="password" size="30px" maxlength="50" autocomplete="off" required>
-
+            <div class="recordarme-contenedor">
+                <label  class="titulos recordarme-checkbox">Recordame</label>
+                <input type="checkbox" value="recordame" name="recordame"> 
+            </div>
             <input type="submit" value="Iniciar Sesion" href=""> 
-            <label class="titulos">Recordame</label>
-            <input type="checkbox" value="recordame" name="recordame"> 
             
-            <p><a href="https://www.google.com.ar/" style="color: black;">¿Has olvidado tu contraseña?</a></p>
-            <p><a href="https://www.google.com.ar/" style="color: gray;">¿Has olvidado tu contraseña?</a></p>
+            <p ><a class="olvidar-contra" href="https://www.google.com.ar/" style="">¿Has olvidado tu contraseña?</a></p>
 
 
             <a  class="href" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
 
-            <a class="href" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>
-            <a class="crear" href="/users/register" style="color: black;">Crear Cuenta</a>
+            <a class="href google" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>
+            <div class="contenedor-crear-cuenta">
+                <h2>Regístrate</h2>
+                <p>¡Bienvenidos! Es rápido y fácil configurar una cuenta.</p>
+                <a class="crear" href="/users/register" style="color: black;">Crear Cuenta</a>
+            </div>
         </form>
         
     </div>
