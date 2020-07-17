@@ -562,6 +562,25 @@ z-index: 50;
   height: calc(1.5em + .5rem + 2px);
 }
 
+.tucarrito{
+  width: 2%;
+}
+.tucarrito a img{
+  /* transform: translate(3683%,92%); */
+  top: 56%;
+  left: 73%;
+  width: 2%;
+  float: right;
+  /* border: 1px solid black; */
+  border-radius: 25%;
+  transition: transform 2s;
+  z-index: 100;
+  position: absolute;
+}
+.imagencarritohover:hover{
+  transform: rotate(25deg);
+}
+
 @media screen and  (min-width:481px){
   /*para el header*/
   .notificacion{
