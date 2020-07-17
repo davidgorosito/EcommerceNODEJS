@@ -223,4 +223,16 @@
     .box input {
         width: 452px;
     }
+    .utilidades-header {
+        margin-top: 3%;
+    }
+    .carrito-compras-img {
+        margin-left: 30%;
+    }
+    .form-control-sm {
+        width: 75%;
+    }
+    .carrito-compras{
+        margin-top: 2%;
+    }
 }

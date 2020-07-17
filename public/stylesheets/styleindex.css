@@ -580,7 +580,14 @@ z-index: 50;
 .imagencarritohover:hover{
   transform: rotate(25deg);
 }
-
+.carrito-compras-img {
+  width: 24%;
+  margin-top: -53%;
+  margin-left: 78%;
+}
+.ml-3, .mx-3 {
+  margin-left: -9px !important; 
+}
 @media screen and  (min-width:481px){
   /*para el header*/
   .notificacion{
@@ -707,7 +714,7 @@ z-index: 50;
   .noticia-promo{
     display: none;
   }
-    /*header*/
+  /*header*/
   .noticia-promo-desktop{
     display: flex;
     background-color:black;
@@ -956,14 +963,14 @@ z-index: 50;
   }
   
   .boton-iniciar-sesion{
-    font: 0.9rem/1.4 Helvetica,Arial,sans-serif;
+    font: 0.8rem/1.4 Helvetica,Arial,sans-serif;
     letter-spacing: .05rem;
     text-decoration: none;
     color: #222;
     display: inline-block;
     text-align: left;
     cursor: pointer;
-    margin-right: 5%;
+    margin-right: 3.6%;
   }
   .boton-iniciar-sesion:hover{
     text-decoration: underline;
@@ -973,4 +980,16 @@ z-index: 50;
     border-radius: 0px;
     height: calc(1.2em + .4rem + 1px);
   }
+  
+  .carrito-compras-img{
+    width: 38%;
+    margin-top: -10%;
+  }
+  .boton-iniciar-sesion {
+    margin-left: -6%;
+  }
+  .nav-inicar-s{
+    display: none;
+  }
+
 }
