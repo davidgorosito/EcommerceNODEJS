@@ -7,7 +7,13 @@ module.exports= (sequelize,DataTypes)=>{
               {
                 estadoId:'estado_id'
               }
-    ); return usuario;
+    ); 
+    usuario.associate=(models)=>{
+      usuario.belongsTo(models)
+    }
+    
+    
+    return usuario;
 
 }
 

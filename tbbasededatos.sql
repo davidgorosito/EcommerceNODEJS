@@ -29,7 +29,7 @@ CREATE TABLE `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `usuario_id_idx` (`usuario_id`),
   KEY `producto_id_idx` (`producto_id`),
-  CONSTRAINT `producto_id` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`producto_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `producto_id` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `usuario_id` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`idusuarios`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -51,10 +51,10 @@ DROP TABLE IF EXISTS `categoria`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `categoria` (
-  `categoria_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_categoria` varchar(45) NOT NULL,
-  PRIMARY KEY (`categoria_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,32 @@ CREATE TABLE `categoria` (
 
 LOCK TABLES `categoria` WRITE;
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
+INSERT INTO `categoria` VALUES (1,'CASUAL'),(2,'DEPORTE');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `estados`
+--
+
+DROP TABLE IF EXISTS `estados`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `estados` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre_estado` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `estados`
+--
+
+LOCK TABLES `estados` WRITE;
+/*!40000 ALTER TABLE `estados` DISABLE KEYS */;
+INSERT INTO `estados` VALUES (1,'LOGUEADO'),(2,'NO-LOGUEADO');
+/*!40000 ALTER TABLE `estados` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -74,9 +99,9 @@ DROP TABLE IF EXISTS `generos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `generos` (
-  `generos_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `nombre_genero` varchar(45) NOT NULL,
-  PRIMARY KEY (`generos_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -86,6 +111,7 @@ CREATE TABLE `generos` (
 
 LOCK TABLES `generos` WRITE;
 /*!40000 ALTER TABLE `generos` DISABLE KEYS */;
+INSERT INTO `generos` VALUES (1,'hombre'),(2,'mujer');
 /*!40000 ALTER TABLE `generos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,18 +123,19 @@ DROP TABLE IF EXISTS `productos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `productos` (
-  `producto_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `descripcion` varchar(200) NOT NULL,
   `precio` int(11) NOT NULL,
   `genero_id` int(11) NOT NULL,
   `categoria_id` int(11) NOT NULL,
-  PRIMARY KEY (`producto_id`),
+  `imagenProducto` varchar(400) DEFAULT NULL,
+  PRIMARY KEY (`id`),
   KEY `categoria_id_idx` (`categoria_id`),
   KEY `genero_id_idx` (`genero_id`),
-  CONSTRAINT `categoria_id` FOREIGN KEY (`categoria_id`) REFERENCES `categoria` (`categoria_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `id_genero` FOREIGN KEY (`genero_id`) REFERENCES `generos` (`generos_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  CONSTRAINT `categoria_id` FOREIGN KEY (`categoria_id`) REFERENCES `categoria` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `id_genero` FOREIGN KEY (`genero_id`) REFERENCES `generos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,6 +144,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
+INSERT INTO `productos` VALUES (1,'REMERA NIKE','REMERA MODELO TANTO TANTO',1500,1,1,NULL),(2,'REMERA2','REMERA MODELO TANTO TANTO',1000,1,1,NULL);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -128,14 +156,17 @@ DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuarios` (
-  `idusuarios` int(11) NOT NULL AUTO_INCREMENT,
+  `idusuarios` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
   `contrasena` varchar(100) NOT NULL,
   `genero_id` int(11) NOT NULL,
-  `estado` varchar(45) NOT NULL,
+  `estado_id` int(11) NOT NULL,
+  `avatar` varchar(400) DEFAULT NULL,
   PRIMARY KEY (`idusuarios`),
   KEY `genero_id_idx` (`genero_id`),
-  CONSTRAINT `genero_id` FOREIGN KEY (`genero_id`) REFERENCES `generos` (`generos_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `estado_id_idx` (`estado_id`),
+  CONSTRAINT `estado_id` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `id` FOREIGN KEY (`genero_id`) REFERENCES `generos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -145,6 +176,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (0,'david@gmail.com','blablabla',1,1,NULL),(1,'david@gmail.com','blablabla',1,1,NULL),(2,'david@gmail.com','123probando',1,1,NULL);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -157,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-11 18:31:54
+-- Dump completed on 2020-07-16 21:33:05

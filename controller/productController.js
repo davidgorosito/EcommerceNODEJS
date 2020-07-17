@@ -1,6 +1,8 @@
 const fs= require('fs');
 const path= require('path');
 const bcrypt= require ('bcryptjs');
+//traigo la base de datos 
+
 
 
 //base de datos sql 

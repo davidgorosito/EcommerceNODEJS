@@ -3,7 +3,8 @@ module.exports= (sequelize,DataTypes)=>{
     'producto',{
         nombre:DataTypes.STRING,
         descripcion:DataTypes.STRING,
-        precio:DataTypes.INTEGER},
+        precio:DataTypes.INTEGER,
+        imagenProducto:DataTypes.STRING},
               {
                 generoId:'genero_id',
                 categoriaId:'categoria_id'

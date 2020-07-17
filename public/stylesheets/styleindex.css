@@ -103,7 +103,7 @@ z-index: 50;
 
 /*icono del menu hamburger*/
 .nav-menu .menu-icon{
-  padding: 28px 20px;
+  padding: 24px 20px;
   position: relative;
   cursor: pointer;
 }
@@ -191,6 +191,8 @@ z-index: 50;
   grid-area: utilidades;
   justify-content: right;
   display: inline;
+  margin-top: 23%;
+  z-index: 50;
 }
 .utilidades-header-buscador{
   width: 62px;
@@ -745,6 +747,9 @@ z-index: 50;
     width: 170px;
     margin-top: 15px;
     margin-right: 113px;
+  }
+  .utilidades-header{
+    margin-top: 7%;
   }
   .utilidades-header-buscador{
     display: none;
