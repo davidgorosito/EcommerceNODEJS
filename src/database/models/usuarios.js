@@ -1,6 +1,6 @@
 module.exports= (sequelize,DataTypes)=>{
     const usuario = sequelize.define(
-    'usuario',{
+    'Usuario',{
         email:DataTypes.STRING,
         contrasena:DataTypes.STRING,
               },
@@ -9,7 +9,7 @@ module.exports= (sequelize,DataTypes)=>{
               }
     ); 
     usuario.associate=(models)=>{
-      usuario.belongsTo(models)
+      usuario.belongsTo(models.Generos)
     }
     
     

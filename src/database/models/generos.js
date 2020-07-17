@@ -1,6 +1,6 @@
 module.exports= (sequelize,DataTypes)=>{
     const generos = sequelize.define(
-    'generos',{
+    'Generos',{
         nombreGenero:DataTypes.STRING,
               },
               {
@@ -8,7 +8,7 @@ module.exports= (sequelize,DataTypes)=>{
               }
     ); 
     generos.associate=(models)=>{
-      generos.hasMany(models.usuario)
+      generos.hasMany(models.Usuario)
     }
     
     
