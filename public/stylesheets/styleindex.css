@@ -201,7 +201,7 @@ z-index: 50;
   grid-area: utilidades;
   justify-content: right;
   display: inline;
-  margin-top: 23%;
+  /*margin-top: 23%;*/
   z-index: 50;
 }
 .utilidades-header-buscador{
@@ -642,7 +642,7 @@ z-index: 50;
   }
   .editorial-tablet{
     display: inline;
-    float: right;
+    /*float: right;*/
   }
   .arreglos-tablet{
     width: 436px;
