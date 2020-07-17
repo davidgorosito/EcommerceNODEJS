@@ -1,6 +1,10 @@
 const fs= require('fs');
 const path = require('path')
+<<<<<<< HEAD
 const bcrypt= require('bcryptjs');
+=======
+const bcrypt=require('bcryptjs');
+>>>>>>> db466c91d41949b61211057131aea357e9f5988c
 const { json }= require('express');
 const { validationResult } = require('express-validator');
 

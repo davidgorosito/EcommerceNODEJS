@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agregar producto </title>
+    <link rel="stylesheet" href='/stylesheets/styleindex.css'>
     <link rel="stylesheet" href="/stylesheets/productAdd.css"><!--mi css que no linkea-->
+    
    <!--bootstrap css-->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    <!--aca estan correctamente los links de los js necesarios para que anden tanto el buscador como el carrusel-->
@@ -15,50 +17,40 @@
 <body>  
   <%- include('partials/header.ejs') %>      
   <div class="container-form">  
-      <form action="/agruegarProducto" method="POST">
+      <form action="/agruegarProducto" method="POST" class="contenedor-agregar-producto">
 
         <div class="form-group">
           <label for="formGroupExampleInput">Nombre del producto</label>
           <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder=" ejemplo: remera adiddas" required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">precio del producto</label>
+          <label for="formGroupExampleInput2">Precio del Producto</label>
           <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=" ejemplo: $1500" required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput">descripcion</label>
+          <label for="formGroupExampleInput">Descripcion</label>
           <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder="ejemplo: remera de mujer talle ...." required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">descuento</label>
+          <label for="formGroupExampleInput2">Descuento</label>
           <input type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%" required>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija una categoria</label>
+          <label for="exampleFormControlSelect1">Elija una Categoria</label>
           <select class="form-control"  name ="category" id="exampleFormControlSelect1" >
             <option>Mujeres</option>
             <option>Hombres</option>
             <option>Niños</option>
           </select>
           </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija el deporte</label>
-          <select class="form-control"  name ="sports" id="exampleFormControlSelect1" >
-            <option>Futbol</option>
-            <option>Hockey</option>
-            <option>Yoga</option>
-            <option>Running</option>
-            <option>Training</option>
-            <option>Otros</option>
-          </select>
-          </div>
+        
           <section class="container-image">
              <div class="fileinput fileinput-new" data-provides="fileinput">
-             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px" ></div>
+             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 10px" ></div>
              <div>
-             <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del producto</span><br>
+             <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del Producto</span><br>
              <span class="fileinput-exists"></span><input type="file" name="image"></span>
-            <a href="#" class="btn btn-primary" data-dismiss="fileinput">eliminar</a>
+            <a href="#" class="btn btn-primary" data-dismiss="fileinput">Eliminar</a>
             </div>
            </div>
           <section>
@@ -68,6 +60,6 @@
           </div>
       </form>
       </div>
-     > 
+      <%- include('./partials/footer.ejs') %>
 </body>
 </html>

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="/stylesheets/carrito.css">
-<%- include('./partials/head.ejs') %> 
-<body>
-    <%- include('./partials/header.ejs') %>
+ 
+
+<body class="carritobody">
+    
     <main>
         <section>
             <div class="carritodecompra"><h2>CARRITO DE COMPRA</h2></div>
-        <div class="contenedorCarrito">
+            <div class="carritoconproductos">El carrito de compras está actualmente vacio.<a href="/">Seguir comprando</a></div>
+        <div class="contenedorcarrito">
             <article class="resumendecompra">
                 <div class="resumen_div">
-                    <h3>RESUMEN DE COMPRA</h3>
-                    <p>Productos: </p>
-                    <p>Shipping: </p>
+                    <h3>RESUMEN DE COMPRA</h3><br>
+                    <p>Productos: </p><br>
+                    <p>Shipping: </p><br>
                 </div>
                 <div class="total_div">
                     <h4>TOTAL</h4>
@@ -20,7 +22,7 @@
                 </div>
             </article>
         </div>
-
+        <div class="entregaopciones"><a href="/detalles-info">Opciones de entrega</a></div>
     </section>
     </main>
     <%- include('./partials/footer.ejs') %>
