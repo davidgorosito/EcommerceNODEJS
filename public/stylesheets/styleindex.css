@@ -140,6 +140,7 @@ z-index: 50;
 }
 .nav-menu .menu-btn:checked ~ .menu{
   max-height: 100%;
+  margin-top: -7px;
 }
 .nav-menu .menu-btn:checked ~ .menu-icon .nav-icon{
   background: transparent;
@@ -152,6 +153,7 @@ z-index: 50;
   transform: rotate(45deg);
   top: 0;
 }
+
 /*fin del menu hamburger*/
 
 .header-menu-out{
@@ -165,11 +167,19 @@ z-index: 50;
   padding: 20px;
   border: 0;
   font-size: 100%;
-  font: 17px Helvetica,Arial,sans-serif;
+  font: 600 0.9rem Helvetica,Arial,sans-serif;
   letter-spacing: 0.05rem;
   color: black;
   border-bottom: 1px solid #ddd;
 }
+.nav-inicar-s{
+  font: 0.9rem/1.4 Helvetica,Arial,sans-serif;
+  letter-spacing: .05rem;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 1000px;
+}
+
 
 .logo-header{
   grid-area: logo;
@@ -191,7 +201,7 @@ z-index: 50;
   grid-area: utilidades;
   justify-content: right;
   display: inline;
-  margin-top: 23%;
+  /*margin-top: 23%;*/
   z-index: 50;
 }
 .utilidades-header-buscador{
@@ -544,6 +554,32 @@ z-index: 50;
 .desktop-cont-cuatro{
   display: none;
 }
+.boton-iniciar-sesion{
+  display: none;
+}
+.form-control-sm{
+  border-radius: 0px;
+  height: calc(1.5em + .5rem + 2px);
+}
+
+.tucarrito{
+  width: 2%;
+}
+.tucarrito a img{
+  /* transform: translate(3683%,92%); */
+  top: 56%;
+  left: 73%;
+  width: 2%;
+  float: right;
+  /* border: 1px solid black; */
+  border-radius: 25%;
+  transition: transform 2s;
+  z-index: 100;
+  position: absolute;
+}
+.imagencarritohover:hover{
+  transform: rotate(25deg);
+}
 
 @media screen and  (min-width:481px){
   /*para el header*/
@@ -606,7 +642,7 @@ z-index: 50;
   }
   .editorial-tablet{
     display: inline;
-    float: right;
+    /*float: right;*/
   }
   .arreglos-tablet{
     width: 436px;
@@ -663,6 +699,9 @@ z-index: 50;
   .content-solo-desktop{
     display: none;
   }
+}
+.boton-iniciar-sesion{
+  display: none;
 }
 @media screen and  (min-width:770px){
   .noticia-promo{
@@ -907,5 +946,31 @@ z-index: 50;
   }
   .link-edit-desktop{
   margin-top: 84px;
+  }
+  .utilidades-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0%;
+    margin-right: 8%;
+  }
+  
+  .boton-iniciar-sesion{
+    font: 0.9rem/1.4 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    margin-right: 5%;
+  }
+  .boton-iniciar-sesion:hover{
+    text-decoration: underline;
+    color: #767676;
+  }
+  .form-control-sm{
+    border-radius: 0px;
+    height: calc(1.2em + .4rem + 1px);
   }
 }

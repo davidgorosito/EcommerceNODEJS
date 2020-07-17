@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.error-notfound {
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2%;
+    padding-left: 44%;
+}
+
+a{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 46%;
+    padding-top: 0%;
+}
+
+.error-notfound, a {
+    padding-top: 20%;
+}
+img{
+    top: 29%;
+    left: 47.4%;
+    width: 5%;
+    position: absolute;
+}

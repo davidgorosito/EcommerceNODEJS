@@ -1,6 +1,8 @@
 const fs= require('fs');
 const path = require('path')
-const bcrypt = require('bcryptjs');
+//const bcrypt = require('bcryptjs');
+const bcrypt= require('bcryptjs');
+
 const { json }= require('express');
 const { validationResult } = require('express-validator');
 
@@ -10,8 +12,7 @@ let arrayUsuarios = JSON.parse(fs.readFileSync(usuarioJson,'utf-8')) || [];
 
 
 let usuarioController={
-
-    register:(req,res)=> res.render('crear-cuenta',{titulo: "Proyecto",
+      register:(req,res)=> res.render('crear-cuenta',{titulo: "Proyecto",
     mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
 }),
 

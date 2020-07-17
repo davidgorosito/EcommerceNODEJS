@@ -31,6 +31,10 @@ app.use(cookieAuth)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.use((req, res, next) => {
+  res.status(404).render("not-found")
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

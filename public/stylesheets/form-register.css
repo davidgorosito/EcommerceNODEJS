@@ -22,61 +22,57 @@
     image-rendering: auto;
     
 }
-img {
-    text-align: center;
-    position: absolute;
-    width: 180px;
-    padding: 40px;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%,-100%);
-}
+
 .box{
-    width: 300px;
+    width: 432px;
     padding: 40px;
     position:relative;
     /*top: 50%;
     left: 50%;
     transform: translate(-50%,-32%);*/
     justify-content: center;
-    margin-top: 11%;
-    background: #191919;
-    text-align: center;
+    margin-top: 38%;
+    border: solid 1px black;
+    background: white;
 }
 
 .box h1{
-    color: white;
+    text-align: center;
+    color: #222;
     /*text-transform: uppercase;*/
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 188%;
-    letter-spacing: .04rem;
+    border-bottom: 1px solid #ddd;
+    font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+    margin-bottom: 5%;
+    letter-spacing: 1.5px;
 }
 .box input{
     background: none;
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3498db;
+    border: 1px solid #aaa;
     padding: 17px 10px;
-    width: 200px;
+    width: 342px;
     color: white;
-    border-radius: 30px;
     transition: 0.25s;
 }
 .box input[type = "submit"]{
-    border:0;
     background: none;
     display: block;
-    margin: 20px auto;
+    margin: 6px auto;
     text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
+    border: 1px solid;
+    padding: 11px 40px;
     outline: none;
     color: white;
-    border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-family: Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    line-height: 1.4;
+    background-color: #222;
 }
 .box input[type = "submit"]:focus{
     background-color: #2ecc71;
@@ -84,37 +80,95 @@ img {
 .href{
     background: none;
     border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
+    color: #222;
+    margin-top: 14px;
+    padding: 0px 30px 0px 00px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font: 0.9rem/0.9 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+}
+.google{
+    margin-bottom: 30px;
+}
+.olvidar-contra{
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #767676;
+    font: 0.8rem/normal Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+    margin-left: 21%;
+}
+.contenedor-crear-cuenta{
+    display: grid;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.contenedor-crear-cuenta h2{
+    padding-bottom: 15px;
+    font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+    color: #222;
+}
+.contenedor-crear-cuenta p{
+    font: 0.8rem/1.4 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    color: #767676;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .crear{
-    background-color: #424242;
-  border: none;
-  color: white;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    text-align: center;
+    width: 342px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-family: Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-property: color,background-color,border-color;
+    min-height: 45px;
+    border: 1px solid #222;
+    font-size: 1rem;
+    color: #222;
+    background-color: #fff;
 }
 .titulos{
-    background: none;
-    border: none;
-    color: white;
     /*padding: 0px 30px;*/
     /*text-align: center;*/
     text-decoration: none;
     display: inline-block;
-    font-size: 94%;
-    margin-top: 8%;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: .02rem;
+    margin-top: 4%;
+    font: 600 0.9rem/1.4 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    color: #222;
 }
-
+.recordarme-contenedor{
+    display: inline-block;
+}
+.recordarme-contenedor input{
+    float: left;
+    margin: 0px;
+    margin-top: 8px;
+    padding: 0px;
+    width: 44px;
+}
+.form-control-sm {
+    border: 1px solid gray;
+}
+.utilidades-header{
+    margin-top: 18%;
+}
+.nav-menu {
+    padding: 6px 0px 15px 9px;
+}
+.img-logo {
+    margin: 18px 0px 16px 47px;
+}
 @media(min-width: 481px){
     .container{
         width: 100%;
@@ -140,5 +194,44 @@ img {
         margin-left: 39%;
         /* margin-right: 19%; */
         width: 21%;
+    }
+    .box{
+        margin-top:11%;
+        width: 510px;
+    }
+    .box input{
+        width: 452px;
+    }
+    .crear{
+        width: 452px;
+    }
+    .img-logo-desktop {
+        display: inline-block;
+        width: 170px;
+        margin-top: 15px;
+        margin-right: 113px;
+        margin-left: 14%;
+    }
+    .nav-menu {
+        padding: 2% 0px 15px 9px;
+    }
+    .utilidades-header {
+        margin-top: 0;
+    }
+    .boton-iniciar-sesion {
+        margin-left: 6%;
+    }
+    .olvidar-contra{
+        margin-left: 30%;
+    }
+    .recordarme-contenedor input {
+        float: left;
+        margin: 0px;
+        margin-top: 8px;
+        padding: 0px;
+        width: 44px;
+    }
+    .recordarme-contenedor{
+        margin-bottom: 2%;
     }
 }

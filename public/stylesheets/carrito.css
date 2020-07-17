@@ -3,7 +3,7 @@
     margin:0px;
     padding: 0px;
   }
-body{
+.carritobody {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,18 +26,33 @@ section {
 
 .carritodecompra {
     padding: 15px;
-    /* border-radius: 10px; */
-    border-bottom: red;
+    border-bottom: 1px solid black;
+}
+.carritodecompra h2 {
+    font-weight: lighter;
+}
+.carritoconproductos {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.contenedorcarrito {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    overflow: hidden;
 }
 .resumendecompra{
     width: 25%;
-    /* margin-top: 50%; */
+    height: 0%;
+    margin-top: 5%;
     margin-bottom: 50%;
     padding: 15px;
     border-radius: 1%;
     background: white;
     border: 1px solid #212529;
     background-color: white;
+    align-self: stretch;
 }
 .continuarbutton {
     background: none;
@@ -45,13 +60,12 @@ section {
     margin: 20px;
     text-align: center;
     border: 2px solid black;
-    transition: 0.25s;
     cursor: pointer;
     color: white;
     background-color: black;
-    width: 50%;
-    border-radius: 15%;
+    width: 85%;
     padding: 14px 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .resumendecompra .resumen_div {
     border-bottom: 1px solid black;
@@ -61,4 +75,10 @@ section {
 .resumendecompra .total_div {
     padding-bottom: 7%;
     padding-top: 7%;
+}
+.entregaopciones {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    
 }
