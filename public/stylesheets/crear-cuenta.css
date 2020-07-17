@@ -205,6 +205,35 @@
 .form-control-sm {
     border: 1px solid gray;
 }
+.form-control-sm {
+    border: 1px solid gray;
+}
+.utilidades-header{
+    margin-top: 18%;
+}
+.nav-menu {
+    padding: 6px 0px 15px 9px;
+}
+.img-logo {
+    margin: 18px 0px 16px 47px;
+}
+.carrito-compras-img{
+    width: 20%;
+    margin-top: -30%;
+    margin-left: 88%;
+    margin-bottom: 14%;
+}
+.form-control-sm {
+    width: 78%;
+}
+.form-control-sm {
+    border-radius: 0px;
+    height: calc(1.2em + .5rem + 2px);
+    margin-top: 7%;
+}
+.img-logo {
+    margin: 18px 0px 16px -6px;
+}
 
 @media(min-width: 768px){
     .container2{ border: none;  
@@ -222,5 +251,27 @@
     }
     .box input {
         width: 452px;
+    }
+    .utilidades-header {
+        margin-top: 3%;
+    }
+    .carrito-compras-img {
+        margin-left: 30%;
+    }
+    .form-control-sm {
+        width: 75%;
+    }
+    .carrito-compras{
+        margin-top: 2%;
+    }
+    .carrito-compras-img {
+        width: 38%;
+        margin-top: -3%;
+    }
+    .carrito-compras-img {
+        margin-left: 29%;
+    }
+    .form-control-sm {
+        margin-top: 0%;
     }
 }
