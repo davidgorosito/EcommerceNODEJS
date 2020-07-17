@@ -1,11 +1,5 @@
 [
  {
-  "email": "aki_flores@hotmail.com",
-  "genero": "hombre",
-  "password": "$2a$10$FyKaTQK8ZzEz5.wQFwh8aOr0SATGxfPK286rF4VO8wlBxO58J7yNq",
-  "avatar": "avatar-1594820511619.JPG"
- },
- {
   "email": "azulromero_96@hotmail.com",
   "genero": "Mujer",
   "password": "$2a$10$p230684V2i8dp0IW5AGqCecCIUcnPF2PiJRFpAXvkPl3CuMUotWkK",
@@ -22,5 +16,11 @@
   "genero": "hombre",
   "password": "$2a$10$Pg880tas/aJqlp.5nO7q7.eRcZx5mrAuvdi.ZEUBJ7Lav.v/PYGeC",
   "avatar": "avatar-1594823540595.JPG"
+ },
+ {
+  "email": "aki_flores@hotmail.com",
+  "genero": "hombre",
+  "password": "$2a$10$4c33ZSmDH9.6nhHivUUk0e.42rz.p/G7H2414DarZIo.hDDwkt4cC",
+  "avatar": "avatar-1594835537260.JPG"
  }
 ]

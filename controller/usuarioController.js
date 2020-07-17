@@ -1,10 +1,6 @@
 const fs= require('fs');
 const path = require('path')
-<<<<<<< HEAD
 const bcrypt = require('bcryptjs');
-=======
-const bcrypt=require('bcryptjs');
->>>>>>> fd1c2579b89ec9632d7f53650ba33753d92e6934
 const { json }= require('express');
 const { validationResult } = require('express-validator');
 
@@ -21,7 +17,6 @@ let usuarioController={
 
     crear:(req, res, next) =>{
         
-
         let nuevoUsuario = {
             nombre:req.body.nombre,
             apellido:req.body.apellido,
@@ -48,14 +43,16 @@ processLogin:( req, res)=>{
     
                         let validation= validationResult(req)
                          let errors= validation.errors;
-                         if(!errors){
+                         
+                         if(errors.length === 0){
                         let user = arrayUsuarios.find(userToLog=>userToLog.email === req.body.email);
                         
-                        if (user!= undefined){
-                            console.log(req.session)
+                        if (user != undefined){
+                            console.log(user, req.body.password)
                             if(bcrypt.compareSync(req.body.password,user.password)){
+                            
                                 req.session.user = user.email;
-                                
+                                console.log(user, req.body)
                                 //cookie recordame
                                 
                                 if(req.body.recordame != undefined){
@@ -67,7 +64,7 @@ processLogin:( req, res)=>{
             }
         }
          }
-         }
+        }
      
 
 
