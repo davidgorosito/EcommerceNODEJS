@@ -612,7 +612,7 @@ z-index: 50;
   .editorial-inner-tablet{
     display: inline;
     margin-right: 30px;
-    /*padding: 0px 20px;*/ 
+    padding: 0px 20px;
   }
   .img-tablet-inner{
     width: 229px;
@@ -642,7 +642,7 @@ z-index: 50;
   }
   .editorial-tablet{
     display: inline;
-    /*float: right;*/
+    float: right;
   }
   .arreglos-tablet{
     width: 436px;

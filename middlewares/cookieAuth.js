@@ -7,4 +7,5 @@
         next()
     }
 
+
     module.exports = cookieAuth;
