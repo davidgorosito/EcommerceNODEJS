@@ -6,11 +6,11 @@ const bcrypt= require ('bcryptjs');
 
 
 //base de datos sql 
-const DB = require('../src/database/models/index')
-
+const DB = require('../src/database/models')
+const OP = DB.Sequelize.Op
 
 let productController={
-    home: (req, res)=> {
+    home:(req, res)=> {
         res.render('index',{
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
@@ -23,10 +23,7 @@ let productController={
         }) 
         },
     detail: (req, res) => {
-        let productDetail = products.find(function (product){
-           return  product.Id == req.params.id}
-        )
-        res.render('detail',{productDetail, 
+        res.render('detail',{ 
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
@@ -47,12 +44,15 @@ let productController={
         fs.writeFileSync(productsJson,JSON.stringify(nuevoarrayDeProducts,null," "))
     },
     listar: (req , res)=>{
-        DB.sequelize.query('SELECT * FROM productos')
-        .then((listado)=>{
-            res.send(listado)
-        }).catch((error)=>{
-            res.send(error)
-        })
+            DB.Producto.findAll()
+              .then((lista) => {
+                res.render('listado-productos', { lista:lista, 
+                titulo: "Proyecto",
+                mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
+              })
+              .catch((error) => {
+                res.send(error)
+              })
     },
     edit : (req , res)=>{
         //busco el producto a editar 
@@ -80,15 +80,13 @@ let productController={
                    res.redirect('/')  
 
     },
-    delete:(req, res)=>{
-        // busco el producto a eliminar
-        let productId = req.params.id
-        let productToDelete = products.filter(product => product.id != productId)
-    
-        let productToDeleteJSON = JSON.stringify(productToDelete)
-        fs.writeFileSync(productsJson, productToDeleteJSON)
-    
-    },
-}
-
+    delete: (req, res) => {
+            DB.Producto.destroy({
+              where: {
+                id: req.params.id
+              }
+            })
+            res.redirect('/')
+          },
+ }
 module.exports=productController;

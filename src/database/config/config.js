@@ -4,7 +4,12 @@ module.exports={
     "password": null,
     "database": "tbdb",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    'define': {
+      'underscored': true,
+      'paranoid':true,
+    }
+
   },
   "test": {
     "username": "root",
