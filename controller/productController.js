@@ -21,13 +21,19 @@ let productController={
             titulo: "Proyecto",
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         }) 
-        },
-    detail: (req, res) => {
-        res.render('detail',{ 
-            titulo: "Proyecto",
-            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
-        })
-    },
+        }, 
+         detail: (req, res) => {
+            DB.Producto.findByPk(req.params.id)
+              .then((detalleProducto) => {
+                res.render('detail', { detalleProducto: detalleProducto ,
+                    titulo: "Proyecto",
+                    mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
+              })
+              .catch((error) => {
+                res.send(error)
+              })
+          },
+        
     store:(req , res)=>{
         //capturo los datos del formulario mediante una variable 
         let productoNuevo={

@@ -51,11 +51,47 @@
               <a class="dropdown-item dropdown-ultimo" href="#">Sale</a>
             </div>
         </div>   
-            <div class="detalle-productos">
-              <section class="product-box">
-                <article class="product-box_data">
-            </i>
-                </article>
+        <h2><%= detalleProducto.nombre %> </h2>
+        <img class="description__img--productDetail" src="/images/products/<%=detalleProducto.imagen_producto%> ">
+      </div>
+      <p class="description__text--productDetail">
+        <!-- Acá va la descripción -->
+        <%= detalleProducto.descripcion %>
+      </p>
+    </div>
+    <div class="purchase__productDetail">
+      <p class="purchase--price__productDetail">
+        <!-- Acá va el precio -->
+        Precio: $<%= detalleProducto.precio %>
+      </p>
+      <h3>Métodos de pago:</h3>
+      <ul class="paymentMethods__productDetail">
+          <!-- estos icons no funcan hay que buscarlos otra ves-->
+        <li><i class="fab fa-cc-visa"></i></li>
+        <li><i class="fab fa-cc-mastercard"></i></li>
+        <li><i class="fab fa-cc-amex"></i></li>
+        <li><i class="fab fa-cc-paypal"></i></li>
+        <li><i class="fab fa-btc"></i></li>
+      </ul>
+      <ul class="purchase--footer__productDetail">
+        <li>
+          <p>Pagá en 12 cuotas sin interés</p>
+        </li>
+        <li>
+          <p>Envío gratis en todo el país</p>
+        </li>
+
+        <a href="/carrito/<%=detalleProducto.id %>">
+        <div class="signup__register--button">
+            <i class="fas fa-shopping-cart"></i>
+            <span>
+              Añadir al carrito
+            </span>
+        </div>
+      </a>
+        <a href="/producto/editar/<%= detalleProducto.id %> ">
+          <button class="signup__register--button">Editar</button>
+        </a>
                 <form action="/producto/delete/?_method=delete" method="POST" >
                   <button type="submit" class="btn btn-danger" >eliminar producto</button>
                 </form>
