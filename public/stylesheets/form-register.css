@@ -53,9 +53,9 @@
     border: 1px solid #aaa;
     padding: 17px 10px;
     width: 342px;
-    color: white;
+    color: black;
     transition: 0.25s;
-}
+    }
 .box input[type = "submit"]{
     background: none;
     display: block;
@@ -172,8 +172,12 @@
 .carrito-compras-img{
     width: 20%;
     margin-top: -30%;
-    margin-left: 88%;
+    margin-left: 83%;
     margin-bottom: 14%;
+}
+.form-inline {
+    margin-top: 1%;
+    width: 88%;
 }
 .form-control-sm {
     width: 78%;
@@ -185,6 +189,13 @@
 }
 .img-logo {
     margin: 18px 0px 16px -6px;
+}
+.nav-menu {
+    margin: 0px 0px 0px 9px;
+}
+.nav-menu .menu-btn:checked ~ .menu {
+    margin-top: 2px;
+    margin-left:0px;
 }
 @media(min-width: 481px){
     .container{
@@ -230,14 +241,12 @@
         margin-left: 14%;
     }
     .nav-menu {
-        padding: 2% 0px 15px 9px;
+        padding: 15px 0px 15px 9px;
     }
     .utilidades-header {
         margin-top: 0;
     }
-    .boton-iniciar-sesion {
-        margin-left: 6%;
-    }
+    
     .olvidar-contra{
         margin-left: 30%;
     }
@@ -251,14 +260,22 @@
     .recordarme-contenedor{
         margin-bottom: 2%;
     }
+
     .carrito-compras-img {
         width: 38%;
-        margin-top: 15%;
+        margin-top: -3%;
+        margin-left: 0%;
     }
     .carrito-compras-img {
         margin-left: 29%;
+        margin-top: 18%;
     }
     .form-control-sm {
         margin-top: 0%;
+    }
+    .form-inline {
+        width: 66%;
+        margin-top: 0%;
+        margin-left: -7%;
     }
 }

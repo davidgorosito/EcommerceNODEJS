@@ -203,6 +203,7 @@ z-index: 50;
   display: inline;
   /*margin-top: 23%;*/
   z-index: 50;
+  display: inline;
 }
 .utilidades-header-buscador{
   width: 62px;
@@ -581,13 +582,78 @@ z-index: 50;
   transform: rotate(25deg);
 }
 .carrito-compras-img {
-  width: 24%;
-  margin-top: -53%;
-  margin-left: 78%;
+  width: 22%;
+  margin-top: -49%;
+  margin-left: 79%;
 }
 .ml-3, .mx-3 {
   margin-left: -9px !important; 
 }
+.form-inline{
+  margin-top: 6%;
+  width: 88%;
+}
+
+.form-control-sm {
+  border-radius: 0px;
+  height: calc(1em + .5rem + 2px);
+}
+/*carrito compras*/
+.carrito-sitio{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    margin-right: 0;
+    margin-top: -24px;
+    float: right;
+}
+.c-pwa-site-basket__link {
+  font: 1.2rem/1.4 Helvetica,Arial,sans-serif;
+  letter-spacing: .05rem;
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  align-items: center;
+}
+.c-pwa-site-basket__cart-count {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 1px);
+  display: flex;
+  justify-content: center;
+  min-width: 13px;
+  height: 13px;
+  padding: 0 2px;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: #fff;
+  background: #222;
+}
+.c-pwa-site-basket__cart-count-plus {
+  display: none;
+}
+.c-pwa-site-basket__icon {
+  height: 25px;
+}
+.c-pwa-site-basket__icon {
+  width: 20px;
+  margin-left: 2px;
+  color: #767676;
+  fill: currentColor;
+}
+.c-pwa-icon {
+  display: inline-block;
+  line-height: 0;
+}
+.c-pwa-site-basket__icon {
+  width: 20px;
+  margin-left: 2px;
+  color: #767676;
+  fill: currentColor;
+}
+
+
 @media screen and  (min-width:481px){
   /*para el header*/
   .notificacion{
@@ -963,7 +1029,7 @@ z-index: 50;
     justify-content: flex-end;
     align-items: center;
     margin-top: 0%;
-    margin-right: 8%;
+    margin-right: 11%;
   }
   
   .boton-iniciar-sesion{
@@ -986,17 +1052,25 @@ z-index: 50;
   }
   
   .carrito-compras-img{
-    width: 38%;
+    width: 42%;
     margin-left: 19%;
     margin-bottom: -36%;
   }
   .boton-iniciar-sesion {
-    margin-left: -6%;
+    margin-left: -12%;
   }
   .nav-inicar-s{
     display: none;
   }
   .ml-3, .mx-3 {
-  margin-top: 1%;
-}
+    margin-top: 1%;
+  }
+  .form-inline{
+    width: 66%;
+    margin-top: 0%;
+    margin-left: -7%;
+  }
+  .carrito-sitio {
+    margin-top: -3px;
+  }
 }

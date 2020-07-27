@@ -5,6 +5,7 @@
 }
 
 .tierra {
+  display: none;
 	width: 200px;
 	height: 200px;
 	position: absolute;
@@ -47,7 +48,7 @@ a:hover{
 /* } */
 .imag-reciclado{
   width: 480px;
-  height: auto;
+  height: 275px;
 }
 .banner-principal-recic{
   position: absolute;
@@ -56,11 +57,11 @@ a:hover{
 }
 .banner-texto{
   /* background: transparent; */
-  background-image: url(https://media.giphy.com/media/u1ntxwWK5fNf2/giphy.gif);
-  background-position: center;
+  /*background-image: url(https://media.giphy.com/media/u1ntxwWK5fNf2/giphy.gif);*/
+  /*background-position: center;*/
   -webkit-background-clip: text;
-  /* color: black; */
-  color: transparent;
+   color: white; 
+  
   font-size: 43px;
   letter-spacing: -0.08rem;
   line-height: 1;
@@ -162,7 +163,7 @@ a:hover{
   }
   .imag-reciclado{
     width: 1440px;
-    height: 810px;
+    height: 679px;
   }
   .banner-texto{
     font-size: 100px;

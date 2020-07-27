@@ -63,7 +63,7 @@
     border: 1px solid #aaa;
     padding: 11px 10px;
     width: 380px;
-    color: white;
+    color: black;
     transition: 0.25s;
 }
 .box input[type = "submit"]{
@@ -127,6 +127,7 @@
 .radiogenero{
     padding: 10px 0px;
     margin-left: -18px;
+    margin-bottom: 25px;
 }
 
 .radiogenero input[type='radio'],
@@ -197,7 +198,7 @@
     
 }
 .nav-menu {
-    padding: 5px 0px 15px 9px;
+    padding: 11px 0px 15px 9px;
 }
 .utilidades-header{
     margin-top: 18%;
@@ -210,9 +211,6 @@
 }
 .utilidades-header{
     margin-top: 18%;
-}
-.nav-menu {
-    padding: 6px 0px 15px 9px;
 }
 .img-logo {
     margin: 18px 0px 16px 47px;
@@ -220,8 +218,12 @@
 .carrito-compras-img{
     width: 20%;
     margin-top: -30%;
-    margin-left: 88%;
+    margin-left: 83%;
     margin-bottom: 14%;
+}
+.form-inline {
+    margin-top: 1%;
+    width: 88%;
 }
 .form-control-sm {
     width: 78%;
@@ -234,11 +236,12 @@
 .img-logo {
     margin: 18px 0px 16px -6px;
 }
+.contenedor3{
+    margin-top: 25px;
+}
 
 @media(min-width: 768px){
     .container2{ border: none;  
-    }
-    .body{ background-image: url(../images/img/adidas.jpg);
     }
 }
 @media(min-width: 1024px){
@@ -253,7 +256,7 @@
         width: 452px;
     }
     .utilidades-header {
-        margin-top: 3%;
+        margin-top: 0%;
     }
     .carrito-compras-img {
         margin-left: 30%;
@@ -262,7 +265,7 @@
         width: 75%;
     }
     .carrito-compras{
-        margin-top: 2%;
+        margin-top: 3%;
     }
     .carrito-compras-img {
         width: 38%;
@@ -274,4 +277,10 @@
     .form-control-sm {
         margin-top: 0%;
     }
+    .form-inline {
+        width: 66%;
+        margin-top: 0%;
+        margin-left: -7%;
+    }
+    
 }
