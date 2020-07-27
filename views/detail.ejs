@@ -54,13 +54,9 @@
             <div class="detalle-productos">
               <section class="product-box">
                 <article class="product-box_data">
-                            <h2><%= productDetail.name %> </h2>
-                  <h2><%= productDetail.price %> </h2>
-                  <span><%=productDetail.discount%> % OFF</span>
-                  <p><%= productDetail.description%> </p>
-                  <i class="fas fa-truck"></i>
+            </i>
                 </article>
-                <form action="/producto/delete/<%= productDetail.Id %>?_method=delete" method="POST" >
+                <form action="/producto/delete/?_method=delete" method="POST" >
                   <button type="submit" class="btn btn-danger" >eliminar producto</button>
                 </form>
         </div>    

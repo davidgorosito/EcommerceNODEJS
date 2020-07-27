@@ -3,14 +3,14 @@ module.exports= (sequelize,DataTypes)=>{
     'Usuario',{
         email:DataTypes.STRING,
         contrasena:DataTypes.STRING,
+        deleted_at: DataTypes.DATE
+
               },
               {
                 estadoId:'estado_id'
               }
     ); 
-    usuario.associate=(models)=>{
-      usuario.belongsTo(models.Generos)
-    }
+  
     
     
     return usuario;

@@ -72,6 +72,7 @@
     font-size: 13px;
   }
 
+<<<<<<< HEAD
   .carrito-vacio p{
     margin-bottom: 10px;
     font: 0.8rem/1.4 Helvetica,Arial,sans-serif;
@@ -148,6 +149,70 @@
     border-color: #aaa;
     color: #fff;
     background-color: #aaa;
+=======
+.carritodecompra {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+.carritodecompra h2 {
+    font-weight: lighter;
+}
+.carritoconproductos {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+}
+.contenedorcarrito {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    justify-content: center;
+    padding-bottom: 5%;
+    
+}
+.resumendecompra{
+    width: 50%;
+    height: 0%;
+    margin-top: 3%;
+    margin-bottom: 50%;
+    padding: 15px;
+    border-radius: 1%;
+    background: white;
+    border: 1px solid #212529;
+    background-color: white;
+    align-self: stretch;
+}
+.continuarbutton {
+    background: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    width: 85%;
+    padding: 14px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resumendecompra .resumen_div {
+    border-bottom: 1px solid black;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+.resumendecompra .total_div {
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+.entregaopciones {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.carritodecompra {
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    width: 89%;
+>>>>>>> 5c9c10b6ce384154c3eb27955d68cfb7cf91c497
 }
 @media screen and  (min-width:770px){
     .cont-main-carrito{

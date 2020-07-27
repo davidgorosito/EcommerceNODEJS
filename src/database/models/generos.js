@@ -1,18 +1,24 @@
 module.exports= (sequelize,DataTypes)=>{
-    const generos = sequelize.define(
-    'Generos',{
+    const genero = sequelize.define(
+    'Genero',{
         nombreGenero:DataTypes.STRING,
+        deleted_at: DataTypes.DATE
+
               },
               {
                 nombreGenero:'nombre_genero'
               }
     ); 
-    generos.associate=(models)=>{
-      generos.hasMany(models.Usuario)
-    }
+   genero.associate=(models)=>{
+     genero.hasMany(models.Producto,{ 
+        as:'productos',
+     foreignkey:'genero_id'
+   });}
+ 
+
     
     
-    return generos;
+    return genero;
 
 }
 
