@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <link rel="stylesheet" href="/stylesheets/carrito.css">
-    <link rel="stylesheet" href="/stylesheets/styleindex.css">
+<%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/header.ejs') %>   
+    <main class="cont-main-carrito">
+        <div class="carrito-inner-grilla carrito-inner">
+            <div class="area-cart-transactional">
+                <div class="titulo-detalles-info carrito-titulo-flex">
+                    <div class="carrito-titulo ">
+                        <h1 class="detalle-del-titulo">Carrito de Compras</h1>
+                    </div>
+                    <div class="deilvery-opciones">
+                        <a href="/detalles-info" class="boton-delivery">Opciones de Delivery</a>
+                    </div>
+                </div>
+                <div class="carrito-vacio">
+                    <p>Tu carrito está actualmente vacío <a href="/">Seguir comprando.</a></p>
+                </div>
+            </div>
+            <div class="resumen-orden-compra">
+                <div class="resumen-compra-contenido">
+                    <div class="resumen-titulo">
+                        <h2>Resumen del pedido</h2>
+                    </div>
+                </div>
+                <div class="order-resumen-inner">
+                    <ul>
+                        <li class="lista-orden">Subtotal
+                            <span data-qa-subtotal="" class="orden-totales-value">
+                                $0.00
+                            </span>
+                        </li>
+                        <li class="lista-orden">Delivery
+                            <span data-qa-shipping-cost="" class="orden-totales-value">
+                                $0.00
+                            </span>
+                        </li>
+                        <li class="lista-orden lista-orden-total">Total
+                            <span data-qa-total-cost="" class="orden-totales-value">
+                                $0.00
+                            </span>
+                        </li>
+                    </ul>
+                    <p>Envío gratis en compras superiores a $1500</p>
+                    <div class="orden-resumen-boton">
+                        <div class="orden-boton-comprar">
+                            <div class="">
+                                <button disabled="disabled" type="button" class="button-cart is-disabled">
+                                Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
 
-<body class="carritobody">
-    <%- include('./partials/header.ejs') %>  
-    <main>
-        <section>
-            <div class="carritodecompra"><h2>CARRITO DE COMPRA</h2></div>
-        <div class="contenedorCarrito">
-            <article class="resumendecompra">
-                <div class="resumen_div">
-                    <h3>RESUMEN DE COMPRA</h3>
-                    <p>Productos: </p>
-                    <p>Shipping: </p>
-                </div>
-                <div class="total_div">
-                    <h4>TOTAL</h4>
-                <button class="continuarbutton">Continuar</button>
-                </div>
-            </article>
         </div>
-
-    </section>
     </main>
-    <%- include('./partials/footer.ejs') %> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <%- include('./partials/footer.ejs') %>
+    
 </body>
 </html>
