@@ -2,13 +2,26 @@ var express = require('express');
 var router = express.Router();
 var productController = require('../controller/productController')
 let indexController= require('../controller/indexController')
+const multer = require('multer');
 
+
+
+let storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'public/images/productos')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+});
+
+let upload = multer({ storage: storage });
 
 /* GET home page. */
 router.get('/', indexController.home);
 // form de crear producto
 router.get('/agregarProducto',productController.productAdd)
-router.post('/agregarProducto',productController.store)
+router.post('/agregarProducto',upload.any(),productController.store)
 //listar productos 
 router.get('/listarProductos',productController.listar)
 // detalle de producto

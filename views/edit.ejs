@@ -8,41 +8,40 @@
 <body>
     <%- include('partials/header.ejs') %>     
   <div class="container-form">  
-      <form action="/producto/editar/<%=productDetail.Id %>?_method=PUT " method="POST">
+      <form action="/producto/editar/<%=detalleProducto.Id %>?_method=PUT " method="POST">
 
         <div class="form-group">
           <label for="formGroupExampleInput">Nombre del producto</label>
-          <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder= <%= productDetail.name %> required>
+          <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder= <%= detalleProducto.nombre %>>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">precio del producto</label>
-          <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=<%= productDetail.price %>  required>
+          <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=<%= detalleProducto.precio %>>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">descripcion</label>
-          <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder=<%= productDetail.description %>  required>
+          <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder=<%= detalleProducto.descripcion %>>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">descuento</label>
-          <input type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%" required>
+          <input type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija una categoria</label>
+          <label for="exampleFormControlSelect1">Elija una genero</label>
           <select class="form-control"  name ="category" id="exampleFormControlSelect1" >
             <option>Mujeres</option>
             <option>Hombres</option>
-            <option>Niños</option>
           </select>
           </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija el deporte</label>
+          <label for="exampleFormControlSelect1">Elija la categoria</label>
           <select class="form-control"  name ="sports" id="exampleFormControlSelect1" >
-            <option>Futbol</option>
-            <option>Hockey</option>
-            <option>Yoga</option>
-            <option>Running</option>
-            <option>Training</option>
-            <option>Otros</option>
+            <option>remeras</option>
+            <option>pantalones</option>
+            <option>zapatillas</option>
+            <option>buzos</option>
+            <option>camperas</option>
+            <option>shorts</option>
           </select>
           </div>
           <section class="container-image">
