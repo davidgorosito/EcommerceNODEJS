@@ -16,12 +16,18 @@ let productController={
             mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         })
     }, // mando al usuario al formulario de creacion del producto
-    productAdd: (req , res)=>{
-         res.render("productAdd",{
-            titulo: "Proyecto",
-            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
-        }) 
-    }, //detalles del producto
+    productAdd: async (req, res) => {
+      try {
+        const categorias = await DB.Categoria.findAll()
+        const generos = await DB.Genero.findAll()
+        res.render('productAdd', { categorias, generos,
+          titulo: "Proyecto",
+          mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500' })
+      } catch (error) {
+        res.send(error)
+      }
+    },
+     //detalles del producto
     detail: (req, res) => {
         DB.Producto.findByPk(req.params.id)
           .then((detalleProducto) => {
@@ -40,7 +46,8 @@ let productController={
           }
           try {
             await DB.Producto.create(nuevoProducto)
-            res.redirect('listado-productos')
+            
+            res.redirect('/listarProductos')
           } catch (error) {
             res.render('not-found',error)
           }

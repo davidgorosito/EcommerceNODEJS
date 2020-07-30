@@ -6,8 +6,8 @@ module.exports= (sequelize,DataTypes)=>{
 
               },
               {
-                nombreGenero:'nombre_genero'
-              }
+                timestamps: false
+              },
     ); 
    genero.associate=(models)=>{
      genero.hasMany(models.Producto,{ 

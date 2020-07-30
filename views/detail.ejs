@@ -92,7 +92,7 @@
         <a href="/producto/editar/<%= detalleProducto.id %> ">
           <button class="signup__register--button">Editar</button>
         </a>
-                <form action="/producto/delete/?_method=delete" method="POST" >
+                <form action="/producto/delete/<%= detalleProducto.id %>?_method=delete" method="POST" >
                   <button type="submit" class="btn btn-danger" >eliminar producto</button>
                 </form>
         </div>    

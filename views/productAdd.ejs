@@ -18,49 +18,44 @@
 <body>  
   <%- include('partials/header.ejs') %>      
   <div class="container-form">  
-      <form action="/agruegarProducto" method="POST" class="contenedor-agregar-producto">
+      <form action="/agregarProducto" method="POST" class="contenedor-agregar-producto">
 
         <div class="form-group">
           <label for="formGroupExampleInput">Nombre del producto</label>
-          <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder=" ejemplo: remera adiddas" required>
+          <input type="text" class="form-control" name="nombre" id="nombre"  placeholder=" ejemplo: remera adiddas" required>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Precio del Producto</label>
-          <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=" ejemplo: $1500" required>
+          <input type="text" class="form-control" name="precio" id="precio"   placeholder=" ejemplo: $1500" required>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">Descripcion</label>
-          <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder="ejemplo: remera de mujer talle ...." required>
-        </div>
-        <div class="form-group">
-          <label  for="formGroupExampleInput2" style="text-align: center;">Descuento</label>
-          <input  type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%" style="text-align: center;" required>
+          <input type="text" class="form-control" name="descripcion" id="descripcion"  placeholder="ejemplo: remera de mujer talle ...." required>
         </div>
         <div class="form-group" style="text-align: center;">
           <label for="exampleFormControlSelect1">Elija un Genero</label>
-          <select class="form-control"  name ="genero" id="exampleFormControlSelect1" >
-            <option>Mujeres</option>
-            <option>Hombres</option>
+          <select class="form-control"  name ="genero_id"  >
+            <% generos.forEach(genero => { %>
+             <option value="<%=genero.id %> "> <%= genero.nombreGenero %> </option>
+            <% }) %>
           </select>
           </div>
           <div class="form-group" style="text-align: center;">
             <label for="exampleFormControlSelect1">Elija una categoria</label>
-            <select class="form-control"  name ="categorium_id" id="exampleFormControlSelect1" >
-              <option>Remeras</option>
-              <option>Buzos</option>
-              <option>Camperas</option>
-              <option>Pantalones</option>
-              <option>Shorts</option>
-              <option>Zapatillas</option>
+            <select class="form-control"  name ="categorium_id" id="categorium_id">
+              <% categorias.forEach(categoria => { %>
+                <option value="<%=categoria.id %> "> <%=categoria.nombre_categoria %> </option>
+               <% }) %>
+             </select>
             </select>
             </div>
 
-          <section class="container-image">
-             <div class="fileinput fileinput-new" data-provides="fileinput">
-             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 10px" ></div>
+          <section class="container-image"name="imagen_producto" id="imagen_producto">
+             <div class="fileinput fileinput-new" name="imagen_producto" id="imagen_producto" data-provides="fileinput">
+             <div class="fileinput-preview thumbnail" data-trigger="fileinput" name="imagen_producto" id="imagen_producto"  style="width: 200px; height: 10px" ></div>
              <div>
              <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del Producto</span><br>
-             <span class="fileinput-exists"></span><input type="file" name="image"></span>
+             <span class="fileinput-exists"></span><input type="file" name="imagen_producto" id="imagen_producto"></span>
             </div>
            </div>
           <section>
