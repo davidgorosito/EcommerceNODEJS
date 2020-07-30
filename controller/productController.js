@@ -42,7 +42,7 @@ let productController={
     store: async (req, res) => {
           const nuevoProducto = {
             ...req.body,
-            imagen_producto:req.files[0].filename
+            //imagen_producto:req.files[0].filename
           }
           try {
             await DB.Producto.create(nuevoProducto)
@@ -63,21 +63,22 @@ let productController={
                 res.send(error)
               })
     },//busco el producto a editar 
-        edit: (req, res) => {
-          DB.Producto.findByPk(req.params.id)
-            .then((detalleProducto) => {
-             res.render('edit', { detalleProducto: detalleProducto ,
-                      titulo: "Proyecto",
-                      mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
-                })
-                .catch((error) => {
-                  res.render('not-found',{error})
-                })
+        edit: async (req, res) => {
+            try {
+               let productFound= await DB.Producto.findByPk(req.params.id)
+              let categorias = await DB.Categoria.findAll()
+              let generos = await DB.Genero.findAll()
+              res.render('edit', { categorias, generos,productFound,
+                titulo: "Proyecto",
+                mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500' })
+            } catch (error) {
+              res.send(error)
+            }
       },//guardo el producto 
         saveP: async (req, res) => {
           const productToEdit = await DB.Producto.findByPk(req.params.id)
           productToEdit.update(req.body)
-          res.redirect('listado-productos')
+          res.redirect('/listarProductos')
     },//borrar producto
     delete: (req, res) => {
             DB.Producto.destroy({

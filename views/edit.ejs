@@ -8,42 +8,46 @@
 <body>
     <%- include('partials/header.ejs') %>     
   <div class="container-form">  
-      <form action="/producto/editar/<%=detalleProducto.Id %>?_method=PUT " method="POST">
+      <form action="/producto/editar/<%=productFound.Id %>?_method=PUT " method="POST">
 
         <div class="form-group">
           <label for="formGroupExampleInput">Nombre del producto</label>
-          <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder= <%= detalleProducto.nombre %>>
+          <input type="text" class="form-control" name="nombre" id="formGroupExampleInput" placeholder= <%= productFound.nombre %>>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">precio del producto</label>
-          <input type="text" class="form-control" name="price" id="formGroupExampleInput2" placeholder=<%= detalleProducto.precio %>>
+          <input type="text" class="form-control" name="precio" id="formGroupExampleInput2" placeholder=<%= productFound.precio %>>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">descripcion</label>
-          <input type="text" class="form-control" name="description" id="formGroupExampleInput" placeholder=<%= detalleProducto.descripcion %>>
+          <input type="text" class="form-control" name="descripcion" id="formGroupExampleInput" placeholder=<%= productFound.descripcion %>>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">descuento</label>
-          <input type="text" class="form-control"  name="descount" id="formGroupExampleInput2" placeholder=" ejemplo: 15%">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija una genero</label>
-          <select class="form-control"  name ="category" id="exampleFormControlSelect1" >
-            <option>Mujeres</option>
-            <option>Hombres</option>
+          <label for="exampleFormControlSelect1">Elija una categoria</label>
+          <select class="form-control"  name ="categorium_id" id="exampleFormControlSelect1" >
+            <% categorias.forEach(categoria => { %>
+              <% if (productFound.categorium_id == categoria.id) { %>
+            <option value="<%= categoria.id %>" selected><%= categoria.nombre_categoria %> </option>
+            <% } else { %>
+            <option value="<%= categoria.id %>"><%= categoria.nombre_categoria %> </option>
+            <% } %>
+            <% }) %>
+
           </select>
           </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija la categoria</label>
-          <select class="form-control"  name ="sports" id="exampleFormControlSelect1" >
-            <option>remeras</option>
-            <option>pantalones</option>
-            <option>zapatillas</option>
-            <option>buzos</option>
-            <option>camperas</option>
-            <option>shorts</option>
-          </select>
-          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Elija un Genero</label>
+            <select class="form-control"  name ="genero_id" id="exampleFormControlSelect1" >
+              <% generos.forEach(genero => { %>
+                <% if (productFound.genero_id == genero.id) { %>
+              <option value="<%= genero.id %>" selected><%= genero.nombreGenero %> </option>
+              <% } else { %>
+              <option value="<%= genero.id %>"><%= genero.nombreGenero %> </option>
+              <% } %>
+              <% }) %>
+  
+            </select>
+            </div>
           <section class="container-image">
              <div class="fileinput fileinput-new" data-provides="fileinput">
              <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px" ></div>
@@ -59,8 +63,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
       </form>
-      </div>
-     > 
+      </div> 
      <!--balalaln-->
 </body>
 </html>
