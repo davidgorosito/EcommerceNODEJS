@@ -4,33 +4,40 @@ const path = require('path')
 
 const bcrypt= require('bcryptjs');
 const { json }= require('express');
-const { validationResult } = require('express-validator');
+const { validationResult,body } = require('express-validator');
 
-let usuarioJson = path.join(__dirname, '../data/DBusuarios.json');
-let arrayUsuarios = JSON.parse(fs.readFileSync(usuarioJson,'utf-8')) || [];
 
+const DB = require('../src/database/models')
+const OP = DB.Sequelize.Op
 
 
 let usuarioController={
+    //  muestro el formulario
       register:(req,res)=> res.render('crear-cuenta',{titulo: "Proyecto",
     mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
 }),
-
-    crear:(req, res, next) =>{
-        
-        let nuevoUsuario = {
-            nombre:req.body.nombre,
-            apellido:req.body.apellido,
-            email: req.body.email,
-            genero: req.body.genero,
-            password: bcrypt.hashSync(req.body.password),
-            avatar:req.files[0].filename
-        
+// creo un usuario
+    crear: async (req, res, next) => {
+        let validation = validationResult(req)
+        let errors = validation.errors
+        if (errors != '') {
+            res.render('crear-cuenta', { errors,titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        } )
         }
-         let nuevaBase = [...arrayUsuarios, nuevoUsuario];
-        fs.writeFileSync(usuarioJson,JSON.stringify(nuevaBase , null, " "));
-        res.redirect('/');
-     },
+        const newUser = {
+            email: req.body.email,
+            contrasena: bcrypt.hashSync(req.body.contrasena, 10),
+            avatar: req.files !== [] ? req.files[0].filename : null
+        }
+        try {
+            await DB.Usuario.create(newUser)
+            return res.redirect('/')
+        } catch (error) {
+            res.send(error)
+        }
+    },
+     // formulario de logueo
         login: (req, res)=>{
         res.render('login',{ titulo: "Proyecto",
         mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'

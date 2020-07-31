@@ -13,65 +13,26 @@
           
         <!-- <img src="/images2/logo4.png" alt=""> -->
     <form class="box" action="/users/register" method="POST" enctype="multipart/form-data"> 
-
+        
         <div class="container2">
-        <h1>Registrate</h1>
-            <label for="Nombre" class="titulos">Nombre y Apellido</label>
-            <input type="text" placeholder="Nombre(s)" name="Nombre" required>
-            <input type="text" placeholder="Apellido(s)" name="Apellido" required>
-        </div>
-        <div class="contenedor3">
-            <label for="FechaDeNacimiento" class="titulos"> Fecha De Nacimiento</label>
-            <br>
-        
-            <input type="number"  placeholder="DD" min="1" max="31">
-            <input type="number"  placeholder="MM" min="1" max="12">
-            <input type="number"  placeholder="YYYY" min="1" max="2000">
-            <br>
-        </div>
-        
-        <p class="fecha-nac">Recopilamos la fecha de nacimiento de acuerdo a nuestro aviso de privacidad. ¡Te haremos un regalo por tu cumpleaños!</p>
-        
-        <div class="radiogenero">
-            <h2>Genero</h2>
-            <!-- <label for="Sexo" class="titulos">Sexo</label>
-            <br> -->
-        
-            <input type="radio" id="hombre" name="genero" value="hombre" required>
-            <label for="hombre">Hombre</label>
-
-            <input type="radio" id="Mujer" name="genero" value="Mujer" required>
-            <label for="Mujer">Mujer</label>
-
-            <input type="radio" id="otro" name="genero" value="otro" required>
-            <label for="otro">Otro</label>
-
-        </div>
-        
-        
-        
+            <% if (typeof errors != "undefined") { %>
+                <% errors.forEach(error => { %>
+                 <h2><%= error.msg %></h2>
+                  <% }) %>
+                <% } %>
         <label for="datos" class="titulos">Datos De Acceso</label>
+        <label for="datos" class="titulos">email</label>
         
         
-        <input type="email" name="email" placeholder="Correo Electronico" required>
-        <!-- <br>
-        <br> -->
-        <input type="password" name="password" placeholder="Contraseña" required>
+        <input  id="email" type="email" name="email"  placeholder="Correo Electronico" >
+        <input id="contrasena" type="password" name="contrasena"  placeholder="contrasena" >
         
         <label for="" class="subir-foto-perfil"> Subi tu foto de perfil</label>
         <input type="file" name="avatar" >
         
         
-        <div class="aceptarterminos">
-            <input type="checkbox" name="checkbox" id="notificaciones">
-            <label for="notificaciones">Me gustaria recibir noticias sobre productos y servicios</label>
-            <br>
-        
-            <input type="checkbox" name="checkbox" id="terminos">
-            <label for="terminos">Al registrarte, aceptas los Terminos y Condiciones y el Aviso de Privacidad</label>
-        </div>
 
-        <input class="registrarse" type="submit" value="Registrate">
+        <button class="registrarse" type="submit" >Registate </button>
 
         <a  class="href-i" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
         <a class="href-i" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>

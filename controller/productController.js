@@ -42,7 +42,7 @@ let productController={
     store: async (req, res) => {
           const nuevoProducto = {
             ...req.body,
-            //imagen_producto:req.files[0].filename
+            imagen_producto:req.files[0].filename
           }
           try {
             await DB.Producto.create(nuevoProducto)

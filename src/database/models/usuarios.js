@@ -3,16 +3,14 @@ module.exports= (sequelize,DataTypes)=>{
     'Usuario',{
         email:DataTypes.STRING,
         contrasena:DataTypes.STRING,
+        avatar:DataTypes.STRING,
         deleted_at: DataTypes.DATE
 
               },
               {
-                estadoId:'estado_id'
-              }
+                timestamps: false
+              },
     ); 
-  
-    
-    
     return usuario;
 
 }

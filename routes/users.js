@@ -28,26 +28,16 @@ router.get('/', function(req, res, next) {
 //Crear cuenta y guardar
 router.get('/register',usuarioController.register);
 router.post('/register',upload.any(),[
-  check("nombre").isLength({
-    min: 5
-  }).withMessage("El nombre tiene que contener un minimo de 2 caracteres"),
-  check("apellido")
-  .isLength({
-    min: 2
-  })
-  .withMessage("El apellido tiene que contener un minimo de 2 caracteres"),
   check("email")
   .isEmail()
   .withMessage("El mail debe ser valido"),
   //Validacion de contraseña
-  check("contraseña")
+  check("contrasena")
   .isLength({
     min: 8
   })
   .withMessage("La contraseña tiene que tener al menos 6 caracteres"),
-  check("avatar").custom((value, {
-    req
-  }) => {
+  /*check("avatar") => {
     if (req.files[0]) {
       let avatar = req.files[0].mimetype;
       if (avatar == "image/jpeg" || avatar == "image/png" || avatar == "image/jpg"){
@@ -58,7 +48,7 @@ router.post('/register',upload.any(),[
     } else {
       return true;
     }
-  }),
+  }),*/
 ],usuarioController.crear);
 
 
