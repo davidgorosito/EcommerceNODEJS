@@ -16,7 +16,7 @@ let usuarioController={
       register:(req,res)=> res.render('crear-cuenta',{titulo: "Proyecto",
     mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
 }),
-// creo un usuario
+// creo un usuario , funcionando
     crear: async (req, res, next) => {
         let validation = validationResult(req)
         let errors = validation.errors
@@ -43,9 +43,6 @@ let usuarioController={
         mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
         
     });
-  
-    //  res.redirect('crear-cuenta')
-    //agruege la validacion //faltan hacer las cockies todavia y los check
 },
 processLogin:( req, res)=>{
     
@@ -53,7 +50,7 @@ processLogin:( req, res)=>{
                          let errors= validation.errors;
                          
                          if(errors.length === 0){
-                        let user = arrayUsuarios.find(userToLog=>userToLog.email === req.body.email);
+                        let user = DB.Usuario.find(userToLog=>userToLog.email === req.body.email);
                         
                         if (user != undefined){
                             console.log(user, req.body.password)
@@ -71,10 +68,34 @@ processLogin:( req, res)=>{
                             
             }
         }
-         }
-        }
-     
-
-
+        // metodo de listar usuarios funcionando 
+         }, 
+         listar: (req , res)=>{
+                DB.Usuario.findAll()
+                  .then((lista) => {
+                    res.render('listado-usuarios', { lista:lista, 
+                    titulo: "Proyecto",
+                    mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
+                  })
+                  .catch((error) => {
+                    res.send(error)
+                  })
+            },
+            // metodo de editar funcionando , no me updatea la imagen 
+            editar: async (req, res) => {
+                try {
+                    const usuarioEditar = await DB.Usuario.findByPk(req.params.id)
+                    res.render('editar-usuario', { usuarioEditar,
+                    titulo: "Proyecto",
+                    mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
+                } catch (error) {
+                    res.send(error)
+                }
+            },
+            update:async (req, res) => {
+              const usuarioToEdit = await DB.Usuario.findByPk(req.params.id)
+              usuarioToEdit.update(req.body)
+              res.redirect('/users/lista')}
+}
 
 module.exports = usuarioController

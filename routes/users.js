@@ -22,9 +22,7 @@ router.get('/login',usuarioController.login);
 router.post('/login',usuarioController.processLogin);
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/lista',usuarioController.listar);
 //Crear cuenta y guardar
 router.get('/register',usuarioController.register);
 router.post('/register',upload.any(),[
@@ -50,6 +48,10 @@ router.post('/register',upload.any(),[
     }
   }),*/
 ],usuarioController.crear);
+// editar
+router.get('/editar/:id',usuarioController.editar);
+router.put('/editar/:id',upload.any(),usuarioController.update);
+
 
 
 

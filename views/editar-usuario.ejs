@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/stylesheets/styleindex.css'>
+    <link rel="stylesheet" href="/stylesheets/crear-cuenta.css">
+    
+</head>
+<body >
+<%- include('./partials/header.ejs') %>  
+    <div class="wrap">
+          
+        <!-- <img src="/images2/logo4.png" alt=""> -->
+    <form class="box" action="/users/editar/<%= usuarioEditar.id %>?_method=PUT" method="POST"
+        enctype="multipart/form-data">
+        <div class="container2">
+            
+        <label for="datos" class="titulos"> ingresa tu nuevo email</label>
+        <input  id="email" type="email" name="email"  value="<%= usuarioEditar.email %> ">
+
+        <label for="datos" class="titulos"> ingresa tu nueva contraseña</label>
+        <input id="contrasena" type="password" name="contrasena"  placeholder="contrasena" >
+        
+        <label for="" class="subir-foto-perfil"> Subi tu  nueva foto de perfil</label>
+        <input type="file" name="avatar" >
+        
+        
+
+        <button  type="submit" >Guardar </button>
+
+        </div>
+    </form>
+    
+</div>
+<%- include('./partials/footer.ejs') %> 
+</body>
+</html>

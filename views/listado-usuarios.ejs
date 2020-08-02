@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %> 
+
+<body>
+  <%- include('./partials/header.ejs') %> 
+    <h1> usuarios</h1>
+
+<div class="container">
+
+<% lista.forEach(usuario => { %>
+  
+        
+
+          <h5 class="card-title"> <%= usuario.email %> </h5>
+          <img src="/images/users/<%= usuario.avatar%> "alt="...">
+        </div>
+      </div>
+    
+
+      <% }); %> 
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
