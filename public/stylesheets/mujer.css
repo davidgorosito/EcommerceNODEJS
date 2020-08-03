@@ -110,7 +110,7 @@ a:hover{
     left: -21px;
     letter-spacing: .05rem;
     border-radius: 0px;
-    margin-top: 218px;
+    margin-top: 132.9%;
 }
 
 .show>.btn-secondary.dropdown-toggle{
@@ -178,9 +178,6 @@ p.titulo-producto{
 }
 .categoria-desktop{
     display: none;
-}
-.dropdown-menu.show {
-    margin-top: 65.8%;
 }
 
 @media screen and  (min-width:481px){

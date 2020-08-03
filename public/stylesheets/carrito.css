@@ -230,6 +230,16 @@ a:hover{
   border-bottom: 1px solid black;
   width: 89%;
 }
+.s-pwa-cms p {
+  margin-bottom: 10px;
+  font: 0.8rem/1.4 Helvetica,Arial,sans-serif;
+  letter-spacing: .05rem;
+  color: #767676;
+}
+.s-pwa-cms a {
+  text-decoration: underline;
+  color: #767676;
+}
 
 @media screen and  (min-width:770px){
   .cont-main-carrito{

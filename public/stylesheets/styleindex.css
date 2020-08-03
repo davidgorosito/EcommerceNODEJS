@@ -590,7 +590,7 @@ z-index: 50;
   margin-left: -9px !important; 
 }
 .form-inline{
-  margin-top: 6%;
+  margin-top: 25%;
   width: 88%;
 }
 
@@ -772,14 +772,15 @@ z-index: 50;
   .content-solo-desktop{
     display: none;
   }
-}
-.boton-iniciar-sesion{
+
+  .boton-iniciar-sesion{
   display: none;
-}
-.ml-3, .mx-3 {
+  }
+  .ml-3, .mx-3 {
   margin-left: -9px !important;
   margin-top: 20%;
 }
+
 @media screen and  (min-width:770px){
   .noticia-promo{
     display: none;
@@ -924,7 +925,7 @@ z-index: 50;
   .editorial-inner-desktop{
     float: left;
     display: block;
-    margin-left: -401px;
+    margin-left: -418px;
     margin-top: 20px;
   }
   .img-desktop-inner{
@@ -935,8 +936,15 @@ z-index: 50;
     margin-top: 4px;
     margin-left: 29px;
   }
+  .desktop-sub-cuatro{
+    display: none;
+  }
   .img-accesorios-sale{
-  width: 560px;
+    width: 823px;
+    display: block;
+    margin-left: -3%;
+    height: 508px;
+  }
   }
   .desktop-sub-cuatro{
     float: right;
@@ -945,6 +953,7 @@ z-index: 50;
   }
   .img-accesorios{
     width: 246px;
+    display: none;
   }
   .tablet{
     display: inline-block;
@@ -965,7 +974,7 @@ z-index: 50;
    display:none;
  }
  .cont-sobre-nosotros{
-   margin-top: 137px;
+   margin-top: 60px;
  }
  /*footer*/
  .email-singup {
@@ -997,7 +1006,7 @@ z-index: 50;
    margin-top: 26px;
    margin-left: 12px;
  }
- element.style {
+ .element.style {
   margin-top: 26px;
   margin-left: 19px;
   }
