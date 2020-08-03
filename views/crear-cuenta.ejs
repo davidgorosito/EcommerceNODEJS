@@ -13,26 +13,26 @@
           
         <!-- <img src="/images2/logo4.png" alt=""> -->
     <form class="box" action="/users/register" method="POST" enctype="multipart/form-data"> 
-        
+        <h1 class="detalle-del-titulo">Crear Cuenta</h1>
+        <p class="datos-ingresar">
+            Ingrese su correo electrónico y contraseña para crear una cuenta.</p>
         <div class="container2">
             <% if (typeof errors != "undefined") { %>
                 <% errors.forEach(error => { %>
                  <h2><%= error.msg %></h2>
                   <% }) %>
                 <% } %>
-        <label for="datos" class="titulos">Datos De Acceso</label>
-        <label for="datos" class="titulos">email</label>
-        
-        
+        <label for="datos" class="titulos">Email*</label>
         <input  id="email" type="email" name="email"  placeholder="Correo Electronico" >
+        <label for="datos" class="titulos">Contraseña*</label>
         <input id="contrasena" type="password" name="contrasena"  placeholder="contrasena" >
         
-        <label for="" class="subir-foto-perfil"> Subi tu foto de perfil</label>
+        <label for="" class="subir-foto-perfil"> Foto de perfil</label>
         <input type="file" name="avatar" >
         
         
 
-        <button class="registrarse" type="submit" >Registate </button>
+        <button class="registrarse" type="submit" >Regístrate </button>
 
         <a  class="href-i" href="https://es-la.facebook.com/login/">Inicia Sesion con Facebook</a>
         <a class="href-i" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com.ar%2F&hl=es-419&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Inicia Sesion con Google</a>

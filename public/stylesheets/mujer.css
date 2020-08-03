@@ -132,6 +132,10 @@ a:hover{
     border-color:black;
     box-shadow: none;
 }
+.btn-secondary:focus {
+    background-color: transparent;
+    color: black;
+}
 
 /*productos*/
 .varios-productos{
@@ -174,6 +178,9 @@ p.titulo-producto{
 }
 .categoria-desktop{
     display: none;
+}
+.dropdown-menu.show {
+    margin-top: 65.8%;
 }
 
 @media screen and  (min-width:481px){
