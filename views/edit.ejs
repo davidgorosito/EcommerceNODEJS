@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include('partials/head.ejs') %> 
-</head>
-<body>
-    <%- include('partials/header.ejs') %>     
-  <div class="container-form">  
-      <form action="/producto/editar/<%=productFound.Id %>?_method=PUT " method="POST" enctype="multipart/form-data">
+<%- include('partials/head.ejs') %> 
 
-        <div class="form-group">
-          <label for="formGroupExampleInput">Nombre del producto</label>
-          <input type="text" class="form-control" name="nombre" id="formGroupExampleInput" placeholder= <%= productFound.nombre %>>
+<body>
+  <%- include('partials/header.ejs') %>     
+  <div class="container-form-edit">
+     <h1 class="titulo-producto-editar">Editar Producto</h1>
+      <form action="/producto/editar/<%=productFound.Id %>?_method=PUT " method="POST" enctype="multipart/form-data" class="formulario-editar-productos">
+
+        <div class="form-group editar-prodcuto-grupo1">
+          <label for="formGroupExampleInput" class="titulo-editar">Nombre del Producto</label>
+          <input type="text" class="form-control form-control-edit" name="nombre" id="formGroupExampleInput" placeholder= <%= productFound.nombre %>>
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">precio del producto</label>
-          <input type="text" class="form-control" name="precio" id="formGroupExampleInput2" placeholder=<%= productFound.precio %>>
+        <div class="form-group editar-prodcuto-grupo1">
+          <label for="formGroupExampleInput2" class="titulo-editar">Precio del Producto</label>
+          <input type="text" class="form-control form-control-edit" name="precio" id="formGroupExampleInput2" placeholder=<%= productFound.precio %>>
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput">descripcion</label>
-          <input type="text" class="form-control" name="descripcion" id="formGroupExampleInput" placeholder=<%= productFound.descripcion %>>
+        <div class="form-group editar-prodcuto-grupo1">
+          <label for="formGroupExampleInput" class="titulo-editar">Descripción</label>
+          <input type="text" class="form-control form-control-edit" name="descripcion" id="formGroupExampleInput" placeholder=<%= productFound.descripcion %>>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Elija una categoria</label>
-          <select class="form-control"  name ="categorium_id" id="exampleFormControlSelect1" >
+        <div class="form-group editar-prodcuto-grupo1">
+          <label for="exampleFormControlSelect1" class="titulo-editar ">Elija una Categoría</label>
+          <select class="form-control form-control-edit"  name ="categorium_id" id="exampleFormControlSelect1" >
             <% categorias.forEach(categoria => { %>
               <% if (productFound.categorium_id == categoria.id) { %>
             <option value="<%= categoria.id %>" selected><%= categoria.nombre_categoria %> </option>
@@ -35,9 +33,9 @@
 
           </select>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Elija un Genero</label>
-            <select class="form-control"  name ="genero_id" id="exampleFormControlSelect1" >
+          <div class="form-group editar-prodcuto-grupo1">
+            <label for="exampleFormControlSelect1" class="titulo-editar">Elija un Género</label>
+            <select class="form-control form-control-edit"  name ="genero_id" id="exampleFormControlSelect1" >
               <% generos.forEach(genero => { %>
                 <% if (productFound.genero_id == genero.id) { %>
               <option value="<%= genero.id %>" selected><%= genero.nombreGenero %> </option>
@@ -50,20 +48,21 @@
             </div>
           <section class="container-image">
              <div class="fileinput fileinput-new" data-provides="fileinput">
-             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px" ></div>
+             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px;" ></div>
              <div>
-             <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del producto</span><br>
+             <span class="btn btn-default btn-file editar-boton-imagen"><span class="fileinput-new">Suba la imagen del Producto</span><br>
              <span class="fileinput-exists"></span><input type="file" name="image"></span>
-            <a href="#" class="btn btn-primary" data-dismiss="fileinput">eliminar</a>
+            <a href="#" class="btn btn-primary editar-boton-edit" data-dismiss="fileinput">Eliminar</a>
             </div>
            </div>
           <section>
      <!--quiero centrar esto -->
         <div class="col-auto my-1">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary editar-boton-edit editar-boton-edit-enviar" style="">Enviar</button>
           </div>
       </form>
       </div> 
      <!--balalaln-->
+     <%- include('./partials/footer.ejs') %>
 </body>
 </html>

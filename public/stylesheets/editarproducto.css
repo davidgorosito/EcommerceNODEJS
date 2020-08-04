@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+  
+html body{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+    
+a:hover{
+    color: black;
+}
+
+.container-form-edit{
+margin-top: 10%;
+}
+.titulo-producto-editar{
+    text-align: center;
+    color: #222;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid #ddd;
+    font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+    margin-bottom: 7%;
+    letter-spacing: 1.5px;
+    margin-top: 5%;
+    padding: 5%;
+}

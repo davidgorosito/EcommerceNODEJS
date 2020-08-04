@@ -236,7 +236,78 @@ p.titulo-producto{
 .mas-info-texto p a:hover{
     color: #767676;
 }
+/*arranca la parte para editar un producto*/
+.titulo-producto-editar{
+    text-align: center;
+    color: #222;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid #ddd;
+    font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+    margin-bottom: 7%;
+    letter-spacing: 1.5px;
+    margin-top: 5%;
+    padding: 5%;
+}
+.titulo-editar{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4%;
+    font: 600 0.9rem/1.4 Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    color: #222;
+}
+.form-control-edit{
+    border-radius: 0px;
+}
 
+.container-image{
+    margin-top: 8%;
+}
+.editar-boton-imagen{
+    width: 432px;
+}
+.editar-boton-edit {
+    background: none;
+    display: block;
+    margin: 6px auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 11px 40px;
+    outline: none;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: Helvetica,Arial,sans-serif;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    line-height: 1.4;
+    background-color: #222;
+}
+.editar-boton-edit:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
+.container-form-edit{
+    padding-top: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+}
+.editar-boton-edit{
+    margin-top: 9%;
+    width: 93%;
+    margin-left: 3.3%;
+}
+.editar-boton-edit-enviar{
+    width: 100%;
+    margin-left: 0%;
+}
+/*fin vista editar producto*/
 
 @media screen and  (min-width:481px){
     .main-categorias {
@@ -266,7 +337,7 @@ p.titulo-producto{
         display: none;
     }
     .una-prenda{
-        justify-content: center;
+        margin-left: 14%;
     }
     .titulo-prenda{
         display: none;
@@ -450,6 +521,53 @@ p.titulo-producto{
     .para-desktop{
         grid-column-end: span 2;
     }
-
+    /*editar producto vista*/
+    .container-form-edit{
+        padding-top: 10%;
+        margin-bottom: 20%;
+    }
+    .titulo-producto-editar{
+        text-align: left;
+        padding: 0%;
+        margin-top: 2%;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+    .form-group {
+        display: inline-block;
+    }
+    .editar-prodcuto-grupo1{
+        width: 31%;
+        margin-right: 5%;
+    }
+    .formulario-editar-productos{
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+    .btn {
+        width: 440px;
+        border: 1px solid black;
+        border-radius: 0px;
+        font-size: 13px;
+        padding: 8px.75rem;
+        margin-top: -14%;
+        float: right;
+        /* margin-left: -2%; */
+        margin-right: 32%;
+    }
+    .editar-boton-edit{
+        width: 53%;
+        margin-top: -6%;
+        margin-right: 47%;
+    }
+    .editar-boton-edit-enviar{
+        margin-top: -1%;
+        margin-left: 0%;
+        margin-right: 47%;
+        width: 54%;
+    }
+    .editar-boton-imagen{
+        width: 405px;
+    }
 }
     
