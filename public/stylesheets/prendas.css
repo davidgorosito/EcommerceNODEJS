@@ -26,6 +26,7 @@ a:hover{
     grid-column-gap: 20px;
     max-width: 1561px;
     margin: 0 auto;
+    margin-left: 35%;
 }
 .prenda-grilla{
     grid-column-end: span 12;
@@ -112,7 +113,19 @@ a:hover{
     left: -21px;
     letter-spacing: .05rem;
     border-radius: 0px;
-    margin-top: 314px;
+    margin-top: 133%;
+    z-index: 0;
+}
+.dropdown-item:hover{
+    background-color:rgb(240, 235, 235);
+}
+.btn-secondary.dropdown-toggle:hover{
+    background-color: transparent;
+}
+
+.btn-secondary:focus {
+    background-color: transparent;
+    color: black;
 }
 
 .show>.btn-secondary.dropdown-toggle{

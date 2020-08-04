@@ -110,7 +110,7 @@ a:hover{
     left: -21px;
     letter-spacing: .05rem;
     border-radius: 0px;
-    margin-top: 218px;
+    margin-top: 132.9%;
 }
 
 .show>.btn-secondary.dropdown-toggle{
@@ -131,6 +131,10 @@ a:hover{
     background-color: transparent;
     border-color:black;
     box-shadow: none;
+}
+.btn-secondary:focus {
+    background-color: transparent;
+    color: black;
 }
 
 /*productos*/

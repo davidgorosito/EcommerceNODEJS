@@ -153,15 +153,18 @@
 .recordarme-contenedor input{
     float: left;
     margin: 0px;
-    margin-top: 8px;
     padding: 0px;
     width: 44px;
+    margin-bottom: 10%;
 }
 .form-control-sm {
     border: 1px solid gray;
 }
 .utilidades-header{
     margin-top: 18%;
+}
+.contraseña-olvidar{
+    margin-bottom: 6%;
 }
 .nav-menu {
     padding: 6px 0px 15px 9px;
@@ -197,6 +200,15 @@
     margin-top: 2px;
     margin-left:0px;
 }
+.box input:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
+
 @media(min-width: 481px){
     .container{
         width: 100%;
@@ -253,7 +265,6 @@
     .recordarme-contenedor input {
         float: left;
         margin: 0px;
-        margin-top: 8px;
         padding: 0px;
         width: 44px;
     }

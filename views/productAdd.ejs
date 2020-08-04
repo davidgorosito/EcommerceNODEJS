@@ -19,21 +19,21 @@
   <%- include('partials/header.ejs') %>      
   <div class="container-form">  
       <form action="/agregarProducto" method="POST" class="contenedor-agregar-producto" enctype="multipart/form-data">
-
+        <h1>Agregar Producto</h1>
         <div class="form-group">
-          <label for="formGroupExampleInput">Nombre del producto</label>
+          <label for="formGroupExampleInput" class="titulos">Nombre del Producto</label>
           <input type="text" class="form-control" name="nombre" id="nombre"  placeholder=" ejemplo: remera adiddas" required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">Precio del Producto</label>
+          <label for="formGroupExampleInput2" class="titulos">Precio del Producto</label>
           <input type="text" class="form-control" name="precio" id="precio"   placeholder=" ejemplo: $1500" required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput">Descripcion</label>
+          <label for="formGroupExampleInput" class="titulo1">Descripcion</label>
           <input type="text" class="form-control" name="descripcion" id="descripcion"  placeholder="ejemplo: remera de mujer talle ...." required>
         </div>
         <div class="form-group" style="text-align: center;">
-          <label for="exampleFormControlSelect1">Elija un Genero</label>
+          <label for="exampleFormControlSelect1" class="titulo2">Elija un Genero</label>
           <select class="form-control"  name ="genero_id"  >
             <% generos.forEach(genero => { %>
              <option value="<%=genero.id %> "> <%= genero.nombreGenero %> </option>
@@ -41,7 +41,7 @@
           </select>
           </div>
           <div class="form-group" style="text-align: center;">
-            <label for="exampleFormControlSelect1">Elija una categoria</label>
+            <label for="exampleFormControlSelect1" class="titulos">Elija una Categoria</label>
             <select class="form-control"  name ="categorium_id" id="categorium_id">
               <% categorias.forEach(categoria => { %>
                 <option value="<%=categoria.id %> "> <%=categoria.nombre_categoria %> </option>
@@ -60,14 +60,16 @@
            </div>
           <section>
      <!--quiero centrar esto -->
+     <div class="configuracion-boton">
      <div class="col-auto my-1" >
-      <button type="submit" class="btn btn-primary" style="margin-left: 25%;">eliminar</button>
+      <button type="submit" class="btn btn-primary boton-configuracion" style="">Eliminar</button>
     </div>
         <div class="col-auto my-1" >
-            <button type="submit" class="btn btn-primary" style="margin-left: 25%;">Enviar</button>
+            <button type="submit" class="btn btn-primary boton-configuracion" style="">Enviar</button>
           </div>
       </form>
       </div>
+    </div>
       <%- include('./partials/footer.ejs') %>
 </body>
 </html>
