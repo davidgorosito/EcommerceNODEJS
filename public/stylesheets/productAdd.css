@@ -8,7 +8,7 @@ form{
    padding-top: 36%;
    display: inline-table;
    margin-left: -4%;
-   margin-bottom: 5%;
+   margin-bottom: 8%;
 }
 .container-image{
    border: 1px black;
@@ -72,26 +72,85 @@ form{
    margin-left: -2%;
 }
 .container-image button:hover{
-   background-color: #222;
-   border: 1px solid #222;
+   color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
 }
 .carrito-compras-img {
    width: 21%;
    margin-top: -25%;
    margin-left: 83%;
 }
+.contenedor-agregar-producto h1{
+   text-align: center;
+   color: #222;
+   /* text-transform: uppercase; */
+   border-bottom: 1px solid #ddd;
+   font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+   margin-bottom: 7%;
+   letter-spacing: 1.5px;
+   margin-top: 5%;
+   padding: 5%;
+}
+.titulos{
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 4%;
+   font: 600 0.9rem/1.4 Helvetica,Arial,sans-serif;
+   letter-spacing: .05rem;
+   color: #222;
+   margin-right: 61%;
+   margin-bottom: 3%;
+}
+.titulo1{
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 4%;
+   font: 600 0.9rem/1.4 Helvetica,Arial,sans-serif;
+   letter-spacing: .05rem;
+   color: #222;
+   margin-right: 75%;
+   margin-bottom: 3%;
+}
+.titulo2{
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 4%;
+   font: 600 0.9rem/1.4 Helvetica,Arial,sans-serif;
+   letter-spacing: .05rem;
+   color: #222;
+   margin-right: 68%;
+   margin-bottom: 3%;
+}
+.form-control{
+   border-radius: 0px;
+}
 
 @media (min-width: 481px){
+   .titulos{
+      margin-right: 51%;
+   }
+   .titulo2{
+      margin-right: 59%;
+   }
+   .contenedor-agregar-producto h1 {
+      padding: 0%
+   }
    .contenedor-agregar-producto{
-      width: 50%;
+      width: 41%;
    }
    .footer-b-registra {
       width: 14%;
       margin-top:0%;
       margin-left: 0%;
   }
-   .form-control {
+   .form-control{
       display: inline-block;
+      width: 156%;
+      border-radius: 0rem;
    }
    .container-form{
    display: inline-table;
@@ -107,7 +166,7 @@ form{
       float: left;
       width: 50%;
       margin-right: 1%;
-      margin-left: 24%;
+      margin-left: 28%;
    }
    label {
       display: inline-block;
@@ -117,8 +176,10 @@ form{
       color: #222;
    }
    .btn:not(:disabled):not(.disabled) {
+      margin-left: 6%;
       cursor: pointer;
       margin-bottom: 3%;
+      margin-top: 3%;
    }
    .footer-b-registra {
       width: 14%;
@@ -154,4 +215,9 @@ form{
       margin-bottom: -37%;
       margin-top: -23%;
   }
+  .configuracion-boton {
+   margin-left: 8%;
+   width: 153%;
+   }
+  
 }
