@@ -54,7 +54,6 @@
              <div>
              <span class="btn btn-default btn-file"><span class="fileinput-new">Suba la imagen del producto</span><br>
              <span class="fileinput-exists"></span><input type="file" name="image"></span>
-            <a href="#" class="btn btn-primary" data-dismiss="fileinput">eliminar</a>
             </div>
            </div>
           <section>
@@ -62,7 +61,10 @@
         <div class="col-auto my-1">
             <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
-      </form>
+        </form>
+      <form action="/producto/delete/<%= productFound.id %>?_method=delete" method="POST" >
+        <button type="submit" class="btn btn-danger" >eliminar producto</button>
+      </form>>
       </div> 
      <!--balalaln-->
 </body>

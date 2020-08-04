@@ -60,6 +60,7 @@ router.post('/register',upload.any(),[
 // editar
 router.get('/editar/:id',usuarioController.editar);
 router.put('/editar/:id',upload.any(),usuarioController.update);
+router.delete('/delete/:id',usuarioController.delete);
 
 
 
