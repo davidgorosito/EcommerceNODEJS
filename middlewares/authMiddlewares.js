@@ -1,4 +1,4 @@
-
+/*
 function authMiddleware(req, res, next){
 
     if(req.session.userId == undefined){
@@ -9,4 +9,4 @@ function authMiddleware(req, res, next){
 
 }
 
-  module.exports= authMiddleware
+  module.exports= authMiddleware*/

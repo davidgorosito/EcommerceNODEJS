@@ -11,7 +11,7 @@ const { check, validationResult } = require('express-validator');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const cookieAuth = require('./middlewares/cookieAuth');
+//const cookieAuth = require('./middlewares/cookieAuth');
 
 var app = express();
 
@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 app.use(session({secret:"secret"}))
-app.use(cookieAuth)
+//app.use(cookieAuth)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

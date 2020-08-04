@@ -22,5 +22,10 @@
   "genero": "hombre",
   "password": "$2a$10$4c33ZSmDH9.6nhHivUUk0e.42rz.p/G7H2414DarZIo.hDDwkt4cC",
   "avatar": "avatar-1594835537260.JPG"
- }
+ },{
+    "email": "david@hotmail.com",
+    "genero": "hombre",
+    "password": "12345678",
+    "avatar": "avatar-1594835537260.JPG"
+   }
 ]

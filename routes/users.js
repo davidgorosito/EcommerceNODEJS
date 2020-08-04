@@ -19,7 +19,16 @@ var upload = multer({ storage: storage })
 
 // Ingresar Cuenta
 router.get('/login',usuarioController.login);
-router.post('/login',usuarioController.processLogin);
+router.post('/login',[
+  check("email")
+  .isEmail()
+  .withMessage("El mail debe ser valido"),
+  //Validacion de contraseña
+  check("contrasena")
+  .isLength({
+    min: 8
+  })
+  .withMessage("La contraseña tiene que tener al menos 6 caracteres")],usuarioController.processLogin);
 
 /* GET users listing. */
 router.get('/lista',usuarioController.listar);
