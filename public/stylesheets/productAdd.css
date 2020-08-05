@@ -176,9 +176,8 @@ form{
       color: #222;
    }
    .btn:not(:disabled):not(.disabled) {
-      margin-left: 6%;
       cursor: pointer;
-      margin-bottom: 3%;
+      margin-right: 22%;
       margin-top: 3%;
    }
    .footer-b-registra {
@@ -208,6 +207,7 @@ form{
       align-content: center;
       align-items: center;
       margin-left: 30%;
+      height: 100%;
    }
    .carrito-compras-img {
       width: 38%;
@@ -216,8 +216,13 @@ form{
       margin-top: -23%;
   }
   .configuracion-boton {
-   margin-left: 7%;
-   width: 168%;
+      margin-left: -45%;
+      width: 168%;
+  }
+  .footer-b-registra {
+   width: 14%;
+   margin-top: 19px;
+   margin-left: -50%;
+}
 }
   
-}
