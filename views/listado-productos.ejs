@@ -4,22 +4,22 @@
 
 <body>
   <%- include('./partials/header.ejs') %> 
-    <h1> TODOS LOS PRODUCTOS </h1>
+    
 
-<div class="container">
-
+<div class="container-productos-listar">
+  <h1> Todos los Productos</h1>
 <% lista.forEach(product => { %>
  
-    <div class="card" >
+    <div class="card contenedor-product_listar" >
   
         <img src="/images/productos/<%= product.imagen_producto %> " class="card-img-top" alt="...">
 
         <div class="card-body">
-
-          <h4 class="card-title"> <%= product.descripcion %> </h4>
-          <h5 class="card-title"> <%= product.nombre %> </h5>
+          <h5 class="card-title-listar-producto-detalle"> <%= product.nombre %> </h5>
+          <h4 class="card-title-listar-productoss"> <%= product.descripcion %> </h4>
           
-          <a href="/products/<%= product.id %> " class="btn btn-primary">Comprar</a>
+          
+          <a href="/products/<%= product.id %> " class=" btn-primary boton-listar-productoss">Comprar</a>
         </div>
       </div>
     

@@ -6,18 +6,19 @@
   <%- include('./partials/header.ejs') %> 
     <h1> usuarios</h1>
 
-<div class="container">
-
+<div class="container-lista-usuarios">
+<h1>Lista de Usiarios de TB</h1>
 <% lista.forEach(usuario => { %>
-  
+      <div class="contenedor-imagen-mail-usuario">
           <img src="/images/users/<%= usuario.avatar%> "alt="...">
-          
-          <h5 class="card-title"> <%= usuario.email %> </h5>
-        </div>
-      </div>
+          <h2 class="email-listar-usuario">Email:</h2>
+          <p class="card-title"> <%= usuario.email %> </p>
+        
+      
     
-
+        </div>
       <% }); %> 
+    
     </div>
     <%- include('./partials/footer.ejs') %>
 </body>

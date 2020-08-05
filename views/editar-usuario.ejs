@@ -10,25 +10,25 @@
 <body >
 <%- include('./partials/header.ejs') %>  
     <div class="wrap">
-          
+       
         <!-- <img src="/images2/logo4.png" alt=""> -->
     <form class="box" action="/users/editar/<%= usuarioEditar.id %>?_method=PUT" method="POST"
         enctype="multipart/form-data">
         <div class="container2">
-            
-        <label for="datos" class="titulos"> ingresa tu nuevo email</label>
+        <h1>Editar Sesión</h1>      
+        <label for="datos" class="titulos"> Ingresa tu Email</label>
         <input  id="email" type="email" name="email"  value="<%= usuarioEditar.email %> ">
 
-        <label for="datos" class="titulos"> ingresa tu nueva contraseña</label>
+        <label for="datos" class="titulos"> Ingresa tu nueva contraseña</label>
         <input id="contrasena" type="password" name="contrasena"  placeholder="contrasena" >
     
-        <button  type="submit" >Guardar </button>
+        <button type="submit" class= "boton-guardar-cambios"style="">Guardar </button>
 
-        </div>
-    </form>
-    <form action="/users/delete/<%= usuarioEditar.id %>?_method=delete" method="POST" >
-        <button type="submit" class="btn btn-danger" >eliminar usuario</button>
+    </div>
+    <form action="/users/delete/1?_method=delete" method="POST">
+        <button type="submit" class="btn btn-danger boton-eliminar-usuario">Eliminar Usuario</button>
       </form>
+    </form>
 </div>
 <%- include('./partials/footer.ejs') %> 
 </body>
