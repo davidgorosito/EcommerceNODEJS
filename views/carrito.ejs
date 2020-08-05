@@ -16,39 +16,40 @@
                 </div>
                 <div data-qa-empty-cart-message="" class="s-pwa-cms c-pwa-markdown">
                 </div>
-            </div>
-            <div class="resumen-orden-compra">
                 <div class="resumen-compra-contenido">
                     <div class="resumen-titulo">
                         <h2>Resumen del pedido</h2>
+                        <img src="/images/productos/<%= productCart.imagen_producto %>" alt="">
                        <p> <%= productCart.nombre %> </p>
                        <p> <%= productCart.descripcion %> </p>
-                       <p> <%= productCart.precio %> </p>
+                       <p> $<%= productCart.precio %> </p>
 
                     </div>
                 </div>
+            </div>
+            <div class="resumen-orden-compra">
                 <div class="order-resumen-inner">
                     <ul>
                         <li class="lista-orden">Subtotal
                             <span data-qa-subtotal="" class="orden-totales-value">
-                                <p> <%= productCart.precio %> </p>
+                                <p>$<%= productCart.precio %> </p>
                             </span>
                         </li>
                         <li class="lista-orden">Delivery
                             <span data-qa-shipping-cost="" class="orden-totales-value">
-                                <p>sin consto tus primeros 10 productos</p>
+                                <p>Sin costo tus primeros 10 productos</p>
                             </span>
                         </li>
                         <li class="lista-orden lista-orden-total">Total
                             <span data-qa-total-cost="" class="orden-totales-value">
-                                    <p><%= productCart.precio %> </p>
+                                    <p>$<%= productCart.precio %> </p>
                             </span>
                         </li>
                     </ul>
                     <div class="orden-resumen-boton">
                         <div class="orden-boton-comprar">
                             <div class="">
-                                  <a type="button" class="btn btn-secundary"href="../../comprado">comprar</a>
+                                  <a type="button" class="button-cart" href="../../comprado">Comprar</a>
                             </div>
                         </div>
                     </div>

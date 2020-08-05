@@ -5,52 +5,8 @@
 <body>
   <div class="cont-body"> 
   <%- include('./partials/header.ejs') %>
-    <main class="main-categorias">
-        <div class="categoria-generales">
-            <div class="categorias-arriba">
-                <div class="categoria-izq">
-                    <a href="#"><img src="../images/pantalonm.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo">
-                         <h1 class="categoria-texto">Calzas</h1>
-                     </div>
-                 </div>
-                 <div class="categoria-derecha">
-                    <a href="#"><img src="../images/topm.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo">
-                         <h1 class="categoria-texto">Tops</h1>
-                     </div>
-                 </div>
-            </div>
-            <div class="categorias-arriba">
-                <div class="categoria-izq">
-                    <a href="#"><img src="../images/zapatillasm.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo-abajo">
-                         <h1 class="categoria-texto">Zapatillas</h1>
-                     </div>
-                 </div>
-                 <div class="categoria-derecha">
-                    <a href="#"><img src="../images/buzom.png" alt="" class="img-categoria"></a> 
-                     <div class="cate-titulo-abajo">
-                         <h1 class="categoria-texto">Buzo</h1>
-                     </div>
-                 </div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Categorías
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Nuevo</a>
-              <a class="dropdown-item" href="#">Tops</a>
-              <a class="dropdown-item" href="#">Buzos</a>
-              <a class="dropdown-item" href="#">Camperas</a>
-              <a class="dropdown-item" href="#">Pantalones y calzas</a>
-              <a class="dropdown-item" href="#">Shorts</a>
-              <a class="dropdown-item" href="#">Conjuntos</a>
-              <a class="dropdown-item dropdown-ultimo" href="#">Sale</a>
-            </div>
-        </div>   
+    <main class="main-categorias-detalle-producto">  
+      <h1>Detalle del Producto</h1>
         <h2><%= detalleProducto.nombre %> </h2>
         <img class="description__img--productDetail" src="/images/productos/<%=detalleProducto.imagen_producto%> ">
       </div>
@@ -62,24 +18,9 @@
     <div class="purchase__productDetail">
       <p class="purchase--price__productDetail">
         <!-- Acá va el precio -->
-        Precio: $<%= detalleProducto.precio %>
+        $<%= detalleProducto.precio %>
       </p>
-      <h3>Métodos de pago:</h3>
-      <ul class="paymentMethods__productDetail">
-          <!-- estos icons no funcan hay que buscarlos otra ves-->
-        <li><i class="fab fa-cc-visa"></i></li>
-        <li><i class="fab fa-cc-mastercard"></i></li>
-        <li><i class="fab fa-cc-amex"></i></li>
-        <li><i class="fab fa-cc-paypal"></i></li>
-        <li><i class="fab fa-btc"></i></li>
-      </ul>
-      <ul class="purchase--footer__productDetail">
-        <li>
-          <p>Pagá en 12 cuotas sin interés</p>
-        </li>
-        <li>
-          <p>Envío gratis en todo el país</p>
-        </li>
+      
 
         <a href="/carrito/<%=detalleProducto.id %>">
         <div class="signup__register--button">
@@ -90,10 +31,10 @@
         </div>
       </a>
         <a href="/producto/editar/<%= detalleProducto.id %> ">
-          <button class="signup__register--button">Editar</button>
+          <button class="signup__register--button-1">Editar</button>
         </a>
                 <form action="/producto/delete/<%= detalleProducto.id %>?_method=delete" method="POST" >
-                  <button type="submit" class="btn btn-danger" >eliminar producto</button>
+                  <button type="submit" class="boton-eliminar-producto-detalle" >Eliminar Producto</button>
                 </form>
         </div>    
     </main>
