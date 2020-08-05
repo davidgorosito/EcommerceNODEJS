@@ -21,12 +21,14 @@
 
         <label for="datos" class="titulos"> ingresa tu nueva contraseña</label>
         <input id="contrasena" type="password" name="contrasena"  placeholder="contrasena" >
-        
+    
         <button  type="submit" >Guardar </button>
 
         </div>
     </form>
-    
+    <form action="/users/delete/<%= usuarioEditar.id %>?_method=delete" method="POST" >
+        <button type="submit" class="btn btn-danger" >eliminar usuario</button>
+      </form>
 </div>
 <%- include('./partials/footer.ejs') %> 
 </body>

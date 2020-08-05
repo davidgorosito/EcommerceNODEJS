@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div data-qa-empty-cart-message="" class="s-pwa-cms c-pwa-markdown">
-                    <p>Su carrito está actualmente vacío.
+                    <p><%= productCart.nombre %> 
                         <a href="/">Seguir Comprando.</a>
                     </p>
                 </div>
@@ -24,23 +24,26 @@
                 <div class="resumen-compra-contenido">
                     <div class="resumen-titulo">
                         <h2>Resumen del pedido</h2>
+                       <p> <%= productCart.nombre %> </p>
+                       <p> <%= productCart.descripcion %> </p>
+                       <p> <%= productCart.precio %> </p>
+
                     </div>
                 </div>
                 <div class="order-resumen-inner">
                     <ul>
                         <li class="lista-orden">Subtotal
                             <span data-qa-subtotal="" class="orden-totales-value">
-                                $0.00
+                                <p> <%= productCart.precio %> </p>
                             </span>
                         </li>
                         <li class="lista-orden">Delivery
                             <span data-qa-shipping-cost="" class="orden-totales-value">
-                                $0.00
                             </span>
                         </li>
                         <li class="lista-orden lista-orden-total">Total
                             <span data-qa-total-cost="" class="orden-totales-value">
-                                $0.00
+                                    
                             </span>
                         </li>
                     </ul>

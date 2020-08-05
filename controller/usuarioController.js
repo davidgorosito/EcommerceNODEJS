@@ -107,6 +107,14 @@ let usuarioController = {
     usuarioToEdit.update(req.body);
     res.redirect("/users/lista");
   },
-};
+   delete: (req, res) => {
+    DB.Usuario.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+    res.redirect('/')
+  },
+}
 
 module.exports = usuarioController;

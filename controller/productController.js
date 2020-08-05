@@ -87,6 +87,17 @@ let productController={
               }
             })
             res.redirect('/')
+          }, // controlador de carrito
+          cart: (req, res) => {
+            DB.Producto.findByPk(req.params.id)
+              .then((productCart) => {
+                res.render('carrito', { productCart: productCart,
+                  titulo: "Proyecto",
+                  mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'})
+              })
+              .catch((error) => {
+                res.send(error)
+              })
           },
  }
 module.exports=productController;
