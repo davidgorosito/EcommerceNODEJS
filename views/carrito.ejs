@@ -15,9 +15,6 @@
                     </div>
                 </div>
                 <div data-qa-empty-cart-message="" class="s-pwa-cms c-pwa-markdown">
-                    <p><%= productCart.nombre %> 
-                        <a href="/">Seguir Comprando.</a>
-                    </p>
                 </div>
             </div>
             <div class="resumen-orden-compra">
@@ -39,21 +36,19 @@
                         </li>
                         <li class="lista-orden">Delivery
                             <span data-qa-shipping-cost="" class="orden-totales-value">
+                                <p>sin consto tus primeros 10 productos</p>
                             </span>
                         </li>
                         <li class="lista-orden lista-orden-total">Total
                             <span data-qa-total-cost="" class="orden-totales-value">
-                                    
+                                    <p><%= productCart.precio %> </p>
                             </span>
                         </li>
                     </ul>
-                    <p>Envío gratis en compras superiores a $1500</p>
                     <div class="orden-resumen-boton">
                         <div class="orden-boton-comprar">
                             <div class="">
-                                <button disabled="disabled" type="button" class="button-cart is-disabled">
-                                Comprar
-                                </button>
+                                    <a href="../../comprado">comprar</a>
                             </div>
                         </div>
                     </div>

@@ -158,6 +158,12 @@ let indexController={
         })
 
     },
+    compra:(req,res)=>{
+        res.render('comprado',{
+            titulo: "Proyecto",
+            mensaje: '3 y 6 cuotas sin interés | envío gratis en compras superiores a $1500'
+        })
+    },
     
 }
 

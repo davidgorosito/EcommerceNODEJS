@@ -56,5 +56,6 @@ router.get ('/zapatillas-hombre', indexController.zapatillasH)
 router.get ('/sale-hombre', indexController.saleH)
 router.get ('/detalles-info', indexController.detallesInfo)
 router.get('/carrito/:id',productController.cart)
+router.get('/comprado',indexController.compra)
 
 module.exports = router;
