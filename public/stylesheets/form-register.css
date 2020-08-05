@@ -208,6 +208,34 @@
     border-color: rgb(118, 118, 118);
     border-image: initial;
 }
+.submit{
+    width: 100%;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: color, background-color, border-color;
+    min-height: 45px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+    margin-bottom: 2%;
+}
+.submit:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
 
 @media(min-width: 481px){
     .container{
@@ -216,6 +244,7 @@
         box-sizing: border-box;
     }
 }
+
 @media(min-width: 769px){
     .body{
         /* background-image: url(../adidas.jpg); */

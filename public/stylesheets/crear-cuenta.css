@@ -297,7 +297,75 @@
     background-color: #fff;
     display: inline-block;
 }
+/* aca arranca la vista editar cuenta*/
+.container2 h1{
+    text-align: center;
+    color: #222;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid #ddd;
+    font: 100 1.6rem/1.4 Helvetica,Arial,sans-serif;
+    margin-bottom: 5%;
+    letter-spacing: 1.5px;
+}
+.boton-guardar-cambios{
+    width: 100%;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: color, background-color, border-color;
+    min-height: 45px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+    margin-bottom: 2%;
+}
+.boton-guardar-cambios:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
+.boton-eliminar-usuario{
+    width: 100%;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: color, background-color, border-color;
+    min-height: 45px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+    margin-bottom: 2%;
+}
+/*fin editar usuario*/
 
+
+.boton-eliminar-usuario:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 118, 118);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
 @media(min-width: 768px){
     .container2{ border: none;  
     }
